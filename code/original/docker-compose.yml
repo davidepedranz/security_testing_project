@@ -1,0 +1,12 @@
+php:
+  build: php
+  links:
+    - mysql
+  ports:
+    - "8000:8000"
+mysql:
+  build: mysql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: password
