@@ -21,3 +21,8 @@ VALUES (1, 1, 1, 'course', 1, 'section', 'room',
 -- students
 INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (3, 'student', md5('student'), 'Student');
 INSERT INTO `students` (`studentid`, `userid`, `fname`, `mi`, `lname`) VALUES (1, 3, 'name', 's', 'surname');
+
+-- parents
+INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (4, 'parent', md5('parent'), 'Parent');
+INSERT INTO `parents` (`parentid`, `userid`, `fname`, `lname`) VALUES (1, 4, 'parent', 'parent');
+INSERT INTO `parent_student_match` (`matchid`, `parentid`, `studentid`) VALUES (1, 1, 1);
