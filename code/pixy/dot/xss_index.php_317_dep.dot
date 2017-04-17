@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_317_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageClasses.php : 278\nLit:  </table>  <br>  <input type='button' value='Add' onClick='document.classes.page2.value=9;document.classes.submit();'>  <input type='button' value='Edit' onClick='document.classes.page2.value=11;checkboxes();'>  <input type='button' value='Delete' onClick='document.classes.deleteclass.value=1;validate();'>  <input type='button' value='Show in Grid' onClick='document.classes.page2.value=25;document.classes.submit();' />  <br><br>  <font color='red'>* Deleting a class will also delete the information for that class</font>  <br><br>  <center>Page: \n"];
+}

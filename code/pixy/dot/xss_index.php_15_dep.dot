@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_15_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/AddStudent.php : 3\nLit: <h1>Add New Student</h1>  <form name='addstudent' action='./index.php' method='POST'>  <br><br><br>  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='500'>   <tr class='header'>	<th>First Name</th>	<th>Middle Initial</th>	<th>Last Name</th>	<th>Username</th>   </tr>   <tr class='even'>	<td><input type='text' name='fname' maxlength='15' size='15' /></td>	<td><input type='text' name='mi' maxlength='2' size='2' /></td>	<td><input type='text' name='lname' maxlength='15' size='15' /></td>	<td>	 <select name='username'>\n"];
+}

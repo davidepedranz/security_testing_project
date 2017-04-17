@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_114_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAnnouncements.php : 50\nLit:  </table>  <br><br>  <center>Page: \n"];
+}

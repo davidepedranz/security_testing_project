@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_244_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 151\nLit:  </table>  <br>  <input type='button' value='Add' onClick='document.semesters.page2.value=7;document.semesters.submit();'>  <input type='button' value='Edit' onClick='document.semesters.page2.value=13;checkboxes();'>  <input type='button' value='Delete' onClick='document.semesters.deletesemester.value=1;validate();'>  <br><br>  <font color='red'>* Deleting a semester will also delete the classes in that semester and the information for those classes</font>	<br><br>  <center>Page: \n"];
+}

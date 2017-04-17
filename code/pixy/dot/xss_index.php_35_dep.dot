@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_35_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/StudentMain.php : 10\nLit: <script language='JavaScript'>  function classes()  {	document.student.page2.value=0;	document.student.submit();  }  function settings()  {	document.student.page2.value=1;	document.student.submit();  }  function assignments()  {	document.student.page2.value=2;	document.student.submit();  }  function grades()  {   document.student.page2.value=3;   document.student.submit();  }  function announcements()  {	document.student.page2.value=4;	document.student.submit();  }  function logoutstudent()  {	document.student.logout.value=1;	document.student.submit();  } </script> <body>\n"];
+}

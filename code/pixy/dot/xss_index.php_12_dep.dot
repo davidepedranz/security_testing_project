@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_12_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/PointsReport.php : 3\nLit:  <h1>Points Report</h1> <br> <table align='center' width='600' cellspacing='0' cellpadding='0' border='0'> <tr> <td> <form name='classes' action='./index.php' method='POST'> <b>Semester: </b> <select name='semester' onChange='document.classes.submit();'>\n"];
+}

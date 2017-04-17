@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_187_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewGrades.php : 88\nLit: Yes\n"];
+}

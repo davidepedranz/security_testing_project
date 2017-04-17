@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_56_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewStudents.php : 24\nLit:   <br><br>  <table cellspacing='0' width='600' class='dynamiclist'>  <tr class='header'>   <th>Student</th>   <th>Current Points</th>   <th>Possible Points</th>   <th>Percent</th>   <th>Grade</th>  </tr>\n"];
+}

@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_252_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/AddClass.php : 159\nLit: </select></td>	<td><input type='text' name='sectionnum' maxlength='15' size='6' /></td>	<td><input type='text' name='roomnum' maxlength='4' size='6' /></td>	<td><input type='text' name='periodnum' maxlength='2' size='6' /></td>	<td>	 <select name='substitute'>\n"];
+}

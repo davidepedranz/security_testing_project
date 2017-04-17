@@ -1,0 +1,31 @@
+digraph cfg {
+  label="xss_index.php_31_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nVar: _t0_22\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nVar: _t0_22\nFunc: _main\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nVar: _t0_22\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nLit:  <h1>View Assignments</h1> <br><br> <table align='center' width='600' cellspacing='0' cellpadding='0' border='0'> <tr> <td> <form name='assignments' action='./index.php' method='POST'>  <br><br>  <table cellspacing='0' width='600' cellpadding='8' class='dynamiclist'>   <tr class='header'>	<th colspan='6'><h2>\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nVar: $coursename\nFunc: _main\n"];
+  n8 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 7\nVar: _t0_22\nFunc: _main\n"];
+  n9 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 7\nbuiltin function:\nmysql_result\n(unmodeled)\n"];
+  n10 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 7\nVar: $query\nFunc: _main\n"];
+  n11 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 6\nVar: _t1_22\nFunc: _main\n"];
+  n12 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 6\nbuiltin function:\nmysql_query\n"];
+  n13 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 7\nLit: 0\n"];
+  n14 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ViewAssignments.php : 9\nLit: </th>   </tr>   <tr class='header'>	<th width='120' align='left' style='padding-left: 20px;'>Title</th>	<th>Assigned Task</th>	<th>Possible Points</th>	<th>Date Assigned</th>	<th>Date Due</th>   </tr>\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n4 -> n7[label="Param #2"];
+  n8 -> n9;
+  n11 -> n12;
+  n10 -> n11;
+  n9 -> n10[label="Param #1"];
+  n9 -> n13[label="Param #2"];
+  n7 -> n8;
+  n2 -> n3[label="Param #1"];
+  n2 -> n14[label="Param #2"];
+}

@@ -1,0 +1,21 @@
+digraph cfg {
+  label="xss_index.php_74_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 30\nVar: _t0_41\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 30\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 30\nVar: _t0_41\nFunc: _main\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 30\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 30\nLit:    <option value='-1' \n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 30\nVar: _t0_41\nFunc: _main\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 31\nLit: \n"];
+  n8 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 31\nLit: SELECTED\n"];
+  n9 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/DeficiencyReport.php : 30\nLit: >All</option>	 </select><br> </td> </tr> </table>  <table cellspacing='0' width='400' class='dynamiclist'>  <tr class='header' align='left'>   <th style='padding-left: 10px;'>Student</th>   <th>Class</th>   <th>Percentage</th>  </tr>\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n6 -> n7;
+  n6 -> n8;
+  n2 -> n3[label="Param #1"];
+  n2 -> n9[label="Param #2"];
+}

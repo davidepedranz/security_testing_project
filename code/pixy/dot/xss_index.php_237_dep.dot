@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_237_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageAnnouncements.php : 140\nLit:  </table>  <br>  <input type='button' value='Add' onClick='document.announcements.page2.value=18;document.announcements.submit();'>  <input type='button' value='Edit' onClick='document.announcements.page2.value=19;checkboxes();'>  <input type='button' value='Delete' onClick='document.announcements.deleteannouncement.value=1;validate();'>  <br><br>  <center>Page: \n"];
+}

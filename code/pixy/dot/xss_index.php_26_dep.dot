@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_26_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/AddSemester.php : 5\nLit: <h1>Add New Semester</h1>  <form name='addsemester' action='./index.php' method='POST'>  <br><br><br>  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='600'>   <tr class='header'>	<th>Semester Name</th>	<th>Term</th>	<th>Start Date</th>	<th>Midterm Date</th>	<th>End Date</th>	<th>Half</th>   </tr>   <tr class='even'>    <td><input type='text' name='title' maxlength='15' /></td>	<td><select name='term'>\n"];
+}

@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_233_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageTerms.php : 139\nLit:  </table>  <br>  <input type='button' value='Add' onClick='document.terms.page2.value=8;document.terms.submit();'>  <input type='button' value='Edit' onClick='document.terms.page2.value=12;checkboxes();'>  <input type='button' value='Delete' onClick='document.terms.deleteterm.value=1;validate();'>  <br><br>  <font color='red'>* Deleting a term will also delete the semesters, classes in each semester, and the information for those classes</font>	<br><br>  <center>Page: \n"];
+}

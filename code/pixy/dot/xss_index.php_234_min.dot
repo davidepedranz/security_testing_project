@@ -1,0 +1,31 @@
+digraph cfg {
+  label="xss_index.php_234_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nVar: _t0_63\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n7 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n8 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n9 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n10 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n11 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n12 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nbuiltin function:\n.\n"];
+  n13 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 139\nVar: $term\nFunc: _main\n"];
+  n14 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/code/original/php/schoolmate/ManageSemesters.php : 133\nbuiltin function:\nmysql_result\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+  n5 -> n6;
+  n6 -> n7;
+  n7 -> n8;
+  n8 -> n9;
+  n9 -> n10;
+  n10 -> n11;
+  n11 -> n12;
+  n12 -> n13;
+  n13 -> n14;
+}
