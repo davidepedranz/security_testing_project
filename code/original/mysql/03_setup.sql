@@ -1,8 +1,8 @@
--- users
-INSERT INTO `users` (`username`, `password`, `type`) VALUES ('admin', 'admin', 'Admin');
-INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (2, 'teacher', 'teacher', 'Teacher');
+-- select the right database
+USE schoolmate;
 
 -- teachers
+INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (2, 'teacher', md5('teacher'), 'Teacher');
 INSERT INTO `teachers` (`teacherid`, `userid`, `fname`, lname) VALUES (1, 2, 'teacher', 'teacher');
 
 -- terms
@@ -17,3 +17,7 @@ INSERT INTO `courses` (`courseid`, `semesterid`, `termid`, `coursename`, `teache
                        `periodnum`, `q1points`, `q2points`, `totalpoints`, `aperc`, `bperc`, `cperc`, `dperc`, `fperc`)
 VALUES (1, 1, 1, 'course', 1, 'section', 'room',
            'ppp', 2.3, 4.5, 55.3, 1, 1, 1, 1, 1);
+
+-- students
+INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (3, 'student', md5('student'), 'Student');
+INSERT INTO `students` (`studentid`, `userid`, `fname`, `mi`, `lname`) VALUES (1, 3, 'name', 's', 'surname');
