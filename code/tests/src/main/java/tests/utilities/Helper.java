@@ -37,4 +37,12 @@ public final class Helper {
         tester.setTextField("password", password);
         tester.submit();
     }
+
+    public void loginAsAdmin() {
+        login("test", "test");
+    }
+
+    public void loginAsTeacher() {
+        login("teacher", "teacher");
+    }
 }
