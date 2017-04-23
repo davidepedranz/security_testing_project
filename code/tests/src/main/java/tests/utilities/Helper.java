@@ -23,10 +23,8 @@ import static org.junit.Assert.assertEquals;
  */
 public final class Helper {
 
-    // constants
-    public static final String BASE_URL = "http://localhost:8000/";
-
     // dependencies
+    private final Environment environment;
     private final WebTester tester;
     private final OkHttpClient client;
 
@@ -35,7 +33,8 @@ public final class Helper {
      *
      * @param tester An instance of WebTester pointing to the vulnerable application.
      */
-    public Helper(WebTester tester) {
+    public Helper(Environment environment, WebTester tester) {
+        this.environment = environment;
         this.tester = tester;
         this.client = new OkHttpClient();
     }
@@ -58,28 +57,47 @@ public final class Helper {
      * Login as the Admin test user.
      */
     public void loginAsAdmin() {
-        login("test", "test");
+        login(environment.adminUsername(), environment.adminPassword());
     }
 
     /**
      * Login as the Teacher test user.
      */
     public void loginAsTeacher() {
-        login("teacher", "teacher");
+        login(environment.teacherUsername(), environment.teacherPassword());
     }
 
     /**
      * Login as the Student test user.
      */
     public void loginAsStudent() {
-        login("student", "student");
+        login(environment.studentUsername(), environment.studentPassword());
     }
 
     /**
      * Login as the Parent test user.
      */
     public void loginAsParent() {
-        login("parent", "parent");
+        login(environment.parentUsername(), environment.parentPassword());
+    }
+
+    /**
+     * Add a plain submit button to the form with the given name.
+     * This method is useful to bypass client side JavaScript validation code.
+     *
+     * @param formName Name of the form to submit.
+     */
+    public void addSubmitButton(String formName) {
+
+        // get a reference to the form to submit
+        final IElement element = tester.getElementByXPath("//form[@name='" + formName + "']");
+        final DomElement form = ((HtmlUnitElementImpl) element).getHtmlElement();
+
+        // create the submit button
+        final AttributesImpl attributes = new AttributesImpl();
+        attributes.addAttribute("", "", "type", "", "submit");
+        final HtmlElement submit = InputElementFactory.instance.createElement(form.getPage(), "input", attributes);
+        form.appendChild(submit);
     }
 
     /**
@@ -120,30 +138,11 @@ public final class Helper {
                 .add("logout", "")
                 .build();
         final Request request = new Request.Builder()
-                .url(Helper.BASE_URL + "index.php")
+                .url(environment.baseURL() + "index.php")
                 .header("Cookie", session)
                 .post(formBody)
                 .build();
         final Response response = client.newCall(request).execute();
         assertEquals(200, response.code());
-    }
-
-    /**
-     * Add a plain submit button to the form with the given name.
-     * This method is useful to bypass client side JavaScript validation code.
-     *
-     * @param formName Name of the form to submit.
-     */
-    public void addSubmitButton(String formName) {
-
-        // get a reference to the form to submit
-        final IElement element = tester.getElementByXPath("//form[@name='" + formName + "']");
-        final DomElement form = ((HtmlUnitElementImpl) element).getHtmlElement();
-
-        // create the submit button
-        final AttributesImpl attributes = new AttributesImpl();
-        attributes.addAttribute("", "", "type", "", "submit");
-        final HtmlElement submit = InputElementFactory.instance.createElement(form.getPage(), "input", attributes);
-        form.appendChild(submit);
     }
 }
