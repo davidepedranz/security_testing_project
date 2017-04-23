@@ -7,6 +7,10 @@
 
  $parent = mysql_fetch_row($query);
 
+ // sanitize
+ $parent1 = htmlspecialchars($parent[1]);
+ $parent2 = htmlspecialchars($parent[2]);
+
  print("<h1>Edit Parent</h1>
 
   <form name='editparent' action='./index.php' method='POST'>
@@ -19,8 +23,8 @@
 	<th>Username</th>
    </tr>
    <tr class='even'>
-	<td><input type='text' name='fname' maxlength='15' value='$parent[1]' /></td>
-	<td><input type='test' name='lname' maxlength='15' value='$parent[2]' /></td>
+	<td><input type='text' name='fname' maxlength='15' value='$parent1' /></td>
+	<td><input type='test' name='lname' maxlength='15' value='$parent2' /></td>
 	<td>
 	 <select name='student'>");
 	 // Get the list of students for the user to choose from //

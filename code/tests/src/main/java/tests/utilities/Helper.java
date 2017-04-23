@@ -142,6 +142,39 @@ public final class Helper {
         editTestSemester("semester");
     }
 
+
+    /**
+     * Modify the title of the test parent.
+     *
+     * @param firstName  New first name for the parent.
+     * @param secondName New second name for the parent.
+     */
+    public void editTestParent(String firstName, String secondName) {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the semester
+        tester.clickLinkWithText("Parents");
+        tester.assertMatch("Manage Parents");
+        tester.setWorkingForm("parents");
+        tester.checkCheckbox("delete[]");
+        tester.clickButtonWithText("Edit");
+
+        // edit the parents (vulnerable form)
+        tester.setWorkingForm("editparent");
+        tester.setTextField("fname", firstName);
+        tester.setTextField("lname", secondName);
+        tester.clickButtonWithText("Edit parent");
+    }
+
+    /**
+     * Restore the initial status of the test parent.
+     */
+    public void cleanupTestParent() {
+        editTestParent("parent", "parent");
+    }
+
     /**
      * Restore the initial status of the Student test user.
      */
