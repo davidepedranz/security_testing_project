@@ -1,7 +1,13 @@
 package tests.utilities;
 
+import com.gargoylesoftware.htmlunit.html.DomElement;
+import com.gargoylesoftware.htmlunit.html.HtmlElement;
+import com.gargoylesoftware.htmlunit.html.InputElementFactory;
+import net.sourceforge.jwebunit.api.IElement;
+import net.sourceforge.jwebunit.htmlunit.HtmlUnitElementImpl;
 import net.sourceforge.jwebunit.junit.WebTester;
 import okhttp3.*;
+import org.xml.sax.helpers.AttributesImpl;
 
 import javax.servlet.http.Cookie;
 
@@ -120,5 +126,24 @@ public final class Helper {
                 .build();
         final Response response = client.newCall(request).execute();
         assertEquals(200, response.code());
+    }
+
+    /**
+     * Add a plain submit button to the form with the given name.
+     * This method is useful to bypass client side JavaScript validation code.
+     *
+     * @param formName Name of the form to submit.
+     */
+    public void addSubmitButton(String formName) {
+
+        // get a reference to the form to submit
+        final IElement element = tester.getElementByXPath("//form[@name='" + formName + "']");
+        final DomElement form = ((HtmlUnitElementImpl) element).getHtmlElement();
+
+        // create the submit button
+        final AttributesImpl attributes = new AttributesImpl();
+        attributes.addAttribute("", "", "type", "", "submit");
+        final HtmlElement submit = InputElementFactory.instance.createElement(form.getPage(), "input", attributes);
+        form.appendChild(submit);
     }
 }
