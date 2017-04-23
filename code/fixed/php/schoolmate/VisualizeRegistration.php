@@ -7,13 +7,19 @@ $name  = mysql_fetch_row($query);
 
 $query = mysql_query("SELECT title FROM semesters WHERE semesterid = $_POST[semester]");
 $title = mysql_fetch_row($query);
+
+// sanitize!
+$name0 = htmlspecialchars($name[0]);
+$name1 = htmlspecialchars($name[1]);
+$title = htmlspecialchars($title[0]);
+
 print("
- <h1>$name[0] $name[1]'s Schedule</h1>
+ <h1>$name0 $name1's Schedule</h1>
  <table align='center' width='600' cellspacing='0' cellpadding='0' border='0'>
  <tr>
  <td>
  <form name='classes' action='./index.php' method='POST'>
-  <b>Semester:</b> $title[0]
+  <b>Semester:</b> $title0
   <table cellspacing='0' width='600' cellpadding='5' border='1' align='center' bordercolor='black' cellspacing='0' cellpadding='5'>
   <tr class='header'>
    <th width='10'>Period</th>

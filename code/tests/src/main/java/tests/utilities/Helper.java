@@ -113,6 +113,36 @@ public final class Helper {
     }
 
     /**
+     * Modify the title of the test Semester.
+     *
+     * @param title New title for the semester.
+     */
+    public void editTestSemester(String title) {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the semester
+        tester.clickLinkWithText("Semesters");
+        tester.assertMatch("Manage Semesters");
+        tester.setWorkingForm("semesters");
+        tester.checkCheckbox("delete[]");
+        tester.clickButtonWithText("Edit");
+
+        // edit the semester (vulnerable form)
+        tester.setWorkingForm("editsemester");
+        tester.setTextField("title", title);   // max 15 characters!
+        tester.clickButtonWithText("Edit Semester");
+    }
+
+    /**
+     * Restore the initial status of the test Semester.
+     */
+    public void cleanupTestSemester() {
+        editTestSemester("semester");
+    }
+
+    /**
      * Restore the initial status of the Student test user.
      */
     public void cleanupStudentTestUser() throws IOException {
