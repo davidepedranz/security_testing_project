@@ -1,3 +1,7 @@
+# Gradle
 .gradle
-.idea
 build/
+
+# IDE
+.idea
+!.idea/runConfigurations

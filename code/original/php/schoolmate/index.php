@@ -14,10 +14,10 @@
   ////////////////////////////////////////
   //  Database Connection Information   //
   ////////////////////////////////////////
-	$dbaddress  = 'mysql';                // location of the database
+  $dbaddress  = 'mysql_original';       // location of the database
   $dbuser     = 'schoolmate';           // databse username
-	$dbpass     = 'schoolmate';           // databse password
-	$dbname     = 'schoolmate';           // name of the database you are using
+  $dbpass     = 'schoolmate';           // databse password
+  $dbname     = 'schoolmate';           // name of the database you are using
   ////////////////////////////////////////
 
   include("Connect.php");

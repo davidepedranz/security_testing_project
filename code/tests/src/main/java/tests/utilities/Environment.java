@@ -11,7 +11,7 @@ import org.aeonbits.owner.Config;
 public interface Environment extends Config {
 
     @Key("BASE_URL")
-    @DefaultValue("http://localhost:8000/")
+    @DefaultValue("http://localhost:2001/")
     String baseURL();
 
 

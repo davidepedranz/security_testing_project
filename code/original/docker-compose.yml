@@ -1,12 +1,13 @@
-php:
+php_original:
   build: php
   links:
-    - mysql
+    - mysql_original
   ports:
-    - "8000:8000"
-mysql:
+    - "2001:8000"
+
+mysql_original:
   build: mysql
   ports:
-    - "3306:3306"
+    - "3307:3306"
   environment:
     MYSQL_ROOT_PASSWORD: password
