@@ -35,3 +35,8 @@ INSERT INTO `parent_student_match` (`matchid`, `parentid`, `studentid`) VALUES (
 -- registrations
 INSERT INTO `registrations` (`regid`, `courseid`, `studentid`, `semesterid`, `termid`, `q1currpoints`, `q2currpoints`, `currentpoints`)
 VALUES (1, 1, 1, 1, 1, 1.2, 2.3, 3.2);
+
+-- assignments
+INSERT INTO `assignments` (`assignmentid`, `courseid`, `semesterid`, `termid`, `title`, `totalpoints`, `assigneddate`, `duedate`, `assignmentinformation`)
+VALUES (1, 1, 1, 1, 'assignment', 23, '2016-08-02', '2016-08-03', 'info');
+

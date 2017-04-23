@@ -1,8 +1,11 @@
 <?php
- $id = $_POST["delete"];
+
+ // sanitize
+ $id0 = htmlspecialchars($_POST["delete"][0]);
+ $selectclass = htmlspecialchars($_POST["selectclass"][0]);
 
  // Get the information for the current assignment //
- $query = mysql_query("SELECT * FROM assignments WHERE assignmentid = $id[0]")
+ $query = mysql_query("SELECT * FROM assignments WHERE assignmentid = $id0")
    or die("EditAssignment.php: Unable to retrieve the information about the assignment to edit - ".mysql_error());
 
  $assignment = mysql_fetch_row($query);
@@ -40,9 +43,9 @@
    </table>
 
   <input type='hidden' name='editassignment'>
-  <input type='hidden' name='assignmentid' value='$id[0]'>
+  <input type='hidden' name='assignmentid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
-  <input type='hidden' name='selectclass' value='$_POST[selectclass]' />
+  <input type='hidden' name='selectclass' value='$selectclass' />
   <input type='hidden' name='logout'>
   <input type='hidden' name='wastotal' value='$assignment[3]'>
   <input type='hidden' name='wasdate' value='$assignment[5]'>
