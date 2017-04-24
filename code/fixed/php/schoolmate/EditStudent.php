@@ -7,7 +7,11 @@
 
  $student = mysql_fetch_row($query);
 
- print("<h1>Edit Student</h1>
+$student1 = htmlspecialchars($student[1]);
+$student2 = htmlspecialchars($student[2]);
+$student3 = htmlspecialchars($student[3]);
+
+print("<h1>Edit Student</h1>
 
   <form name='editstudent' action='./index.php' method='POST'>
   <br><br><br>
@@ -19,9 +23,9 @@
 	<th>Username</th>
    </tr>
    <tr class='even'>
-	<td><input type='text' name='fname' maxlength='15' value='$student[1]' /></td>
-	<td><input type='text' name='mi' maxlength='2' size='2' value='$student[2]' /></td>
-	<td><input type='test' name='lname' maxlength='15' value='$student[3]' /></td>
+	<td><input type='text' name='fname' maxlength='15' value='$student1' /></td>
+	<td><input type='text' name='mi' maxlength='2' size='2' value='$student2' /></td>
+	<td><input type='test' name='lname' maxlength='15' value='$student3' /></td>
 	<td>
 	 <select name='username'>");
 

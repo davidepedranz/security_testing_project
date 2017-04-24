@@ -176,6 +176,33 @@ public final class Helper {
     }
 
     /**
+     * Modify the student test user.
+     *
+     * @param fname First name.
+     * @param mi    Initial.
+     * @param fname Second name.
+     */
+    public void editTestStudent(String fname, String mi, String lname) {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Students");
+        tester.assertMatch("Manage Students");
+        tester.setWorkingForm("students");
+        tester.checkCheckbox("delete[]");
+        tester.clickButtonWithText("Edit");
+
+        // edit the parents (vulnerable form)
+        tester.setWorkingForm("editstudent");
+        tester.setTextField("fname", fname);
+        tester.setTextField("mi", mi);
+        tester.setTextField("lname", lname);
+        tester.clickButtonWithText("Edit Student");
+    }
+
+    /**
      * Restore the initial status of the Student test user.
      */
     public void cleanupStudentTestUser() throws IOException {
