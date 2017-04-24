@@ -2,7 +2,7 @@
  $id = $_POST["delete"];
 
  // sanitize!
- $id0 = htmlspecialchars($id[0])
+ $id0 = htmlspecialchars($id[0]);
 
  // Get the information for the current announcement //
  $query = mysql_query("SELECT * FROM schoolbulletins WHERE sbulletinid = $id[0]")
