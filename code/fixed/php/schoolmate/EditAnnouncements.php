@@ -1,6 +1,9 @@
 <?php
  $id = $_POST["delete"];
 
+ // sanitize!
+ $id0 = htmlspecialchars($id[0])
+
  // Get the information for the current announcement //
  $query = mysql_query("SELECT * FROM schoolbulletins WHERE sbulletinid = $id[0]")
    or die("EditAnnouncement.php: Unable to retrieve the information about the announcement to edit - ".mysql_error());
@@ -36,7 +39,7 @@
    </table>
 
   <input type='hidden' name='editannouncement'>
-  <input type='hidden' name='announcementid' value='$id[0]'>
+  <input type='hidden' name='announcementid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>

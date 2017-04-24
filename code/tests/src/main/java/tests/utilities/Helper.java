@@ -235,4 +235,29 @@ public final class Helper {
         final Response response = client.newCall(request).execute();
         assertEquals(200, response.code());
     }
+
+    /**
+     * Modify the default test announcement.
+     *
+     * @param title   Title.
+     * @param message Message.
+     */
+    public void edtiTestAnnouncement(String title, String message) {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Announcements");
+        tester.assertMatch("Manage Announcements");
+        tester.setWorkingForm("announcements");
+        tester.checkCheckbox("delete[]");
+        tester.clickButtonWithText("Edit");
+
+        // edit the parents (vulnerable form)
+        tester.setWorkingForm("editannouncement");
+        tester.setTextField("title", title);
+        tester.setTextField("message", message);
+        tester.clickButtonWithText("Edit Announcement");
+    }
 }
