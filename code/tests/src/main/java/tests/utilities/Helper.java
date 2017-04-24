@@ -237,6 +237,47 @@ public final class Helper {
     }
 
     /**
+     * Go to the page to edit the default teacher.
+     */
+    public void goToEditTeacher() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Teachers");
+        tester.assertMatch("Manage Teachers");
+        tester.setWorkingForm("teachers");
+        tester.checkCheckbox("delete[]", "1");      // there are 2 default teachers
+        tester.clickButtonWithText("Edit");
+    }
+
+    /**
+     * Modify the teacher test user.
+     *
+     * @param fname First name.
+     * @param fname Second name.
+     */
+    public void editTestTeacher(String fname, String lname) {
+
+        // go to the right page
+        goToEditTeacher();
+
+        // edit the parents (vulnerable form)
+        tester.setWorkingForm("editteacher");
+        tester.setTextField("fname", fname);
+        tester.setTextField("lname", lname);
+        tester.clickButtonWithText("Edit teacher");
+    }
+
+    /**
+     * Restore the initial status of the test teacher.
+     */
+    public void cleanupTestTeacher() {
+        editTestTeacher("teacher", "teacher");
+    }
+
+    /**
      * Modify the default test announcement.
      *
      * @param title   Title.

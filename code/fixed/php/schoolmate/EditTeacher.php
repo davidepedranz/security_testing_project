@@ -7,6 +7,10 @@
 
  $teacher = mysql_fetch_row($query);
 
+ // sanitize!
+ $teacher1 = htmlspecialchars($teacher[1]);
+ $teacher2 = htmlspecialchars($teacher[2]);
+
  print("<h1>Edit Teacher</h1>
 
   <form name='editteacher' action='./index.php' method='POST'>
@@ -18,8 +22,8 @@
 	<th>Username</th>
    </tr>
    <tr class='even'>
-	<td><input type='text' name='fname' maxlength='15' value='$teacher[1]' /></td>
-	<td><input type='test' name='lname' maxlength='15' value='$teacher[2]' /></td>
+	<td><input type='text' name='fname' maxlength='15' value='$teacher1' /></td>
+	<td><input type='test' name='lname' maxlength='15' value='$teacher2' /></td>
 	<td>
 	 <select name='username'>");
 
