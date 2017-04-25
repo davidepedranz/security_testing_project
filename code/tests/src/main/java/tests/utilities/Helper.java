@@ -319,6 +319,51 @@ public final class Helper {
     }
 
     /**
+     * Go to the page to edit the default class.
+     */
+    public void goToEditClass() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Classes");
+        tester.assertMatch("Manage Classes");
+        tester.setWorkingForm("classes");
+        tester.checkCheckbox("delete[]");
+        tester.clickButtonWithText("Edit");
+    }
+
+    /**
+     * Modify the default class.
+     *
+     * @param name    New name.
+     * @param section New section.
+     * @param room    New room.
+     * @param period  New period.
+     */
+    public void editTestClass(String name, String section, String room, String period) {
+
+        // go to the right page
+        goToEditClass();
+
+        // edit (vulnerable form)
+        tester.setWorkingForm("editclass");
+        tester.setTextField("title", name);
+        tester.setTextField("sectionnum", section);
+        tester.setTextField("roomnum", room);
+        tester.setTextField("periodnum", period);
+        tester.clickButtonWithText("Edit Class");
+    }
+
+    /**
+     * Restore the initial status of the test class.
+     */
+    public void cleanupTestClass() {
+        editTestClass("course", "section", "room", "ppp");
+    }
+
+    /**
      * Modify the default test announcement.
      *
      * @param title   Title.

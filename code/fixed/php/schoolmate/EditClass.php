@@ -7,6 +7,9 @@
 
  $class = mysql_fetch_row($query);
 
+ // sanitize!
+ $class0 = htmlspecialchars($class[0]);
+
  print("<h1>Edit Class</h1>
 
   <form name='editclass' action='./index.php' method='POST'>
@@ -22,7 +25,7 @@
 	<th>Substitute</th>
    </tr>
    <tr class='even'>
-	<td><input type='text' name='title' maxlength='20' value='$class[0]' /></td>
+	<td><input type='text' name='title' maxlength='20' value='$class0' /></td>
 	<td><select name='teacher'>");
 
 	// print out the list of teachers for the drop-down box //
