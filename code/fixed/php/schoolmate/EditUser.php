@@ -7,6 +7,9 @@
 
  $user = mysql_fetch_row($query);
 
+ // sanitize!
+ $user0 = htmlspecialchars($user[0]);
+
  print("<script language='JavaScript'>
  <!--
   function validate()
@@ -42,7 +45,7 @@
 	<th>Type</th>
    </tr>
    <tr class='even'>
-	<td><input type='text' name='username' maxlength='15' value='$user[0]' /></td>
+	<td><input type='text' name='username' maxlength='15' value='$user0' /></td>
 	<td><input type='password' name='password' /></td>
 	<td><input type='password' name='password2' /></td>
 	<td>

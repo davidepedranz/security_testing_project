@@ -1,6 +1,9 @@
 <?php
  $id = $_POST["delete"];
 
+ // sanitize!
+ $id0 = htmlspecialchars($id[0]);
+
  // Get the information for the current term //
  $query = mysql_query("SELECT title, startdate, enddate FROM terms WHERE termid = $id[0]")
    or die("EditTerm.php: Unable to retrieve the information about the term to edit - ".mysql_error());
@@ -36,7 +39,7 @@
    </table>
 
   <input type='hidden' name='editterm'>
-  <input type='hidden' name='termid' value='$id[0]'>
+  <input type='hidden' name='termid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>

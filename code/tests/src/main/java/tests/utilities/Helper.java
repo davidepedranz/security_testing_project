@@ -278,6 +278,47 @@ public final class Helper {
     }
 
     /**
+     * Go to the page to edit the default user #2.
+     */
+    public void goToEditUser() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Users");
+        tester.assertMatch("Manage Users");
+        tester.setWorkingForm("users");
+        tester.checkCheckbox("delete[]", "2");      // there are many default users
+        tester.clickButtonWithText("Edit");
+    }
+
+    /**
+     * Modify the default test user #2.
+     *
+     * @param username New username.
+     */
+    public void editTestUser(String username, String password) {
+
+        // go to the right page
+        goToEditUser();
+
+        // edit (vulnerable form)
+        tester.setWorkingForm("edituser");
+        tester.setTextField("username", username);
+        tester.setTextField("password", password);
+        tester.setTextField("password2", password);
+        tester.clickButtonWithText("Edit user");
+    }
+
+    /**
+     * Restore the initial status of the test user #2.
+     */
+    public void cleanupTestUser() {
+        editTestUser("teacher", "teacher");
+    }
+
+    /**
      * Modify the default test announcement.
      *
      * @param title   Title.
