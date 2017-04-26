@@ -119,6 +119,23 @@ public final class Helper {
         tester.beginAt("index.php");
     }
 
+
+    /**
+     * Go to the GradeReport page.
+     */
+    public void goToGradeReport() {
+
+        // this page is for the administrator
+        loginAsAdmin();
+
+        // move to the page
+        tester.clickLinkWithText("Students");
+        tester.assertMatch("Manage Students");
+        tester.setWorkingForm("students");
+        tester.selectOption("report", "Grade Report");
+        tester.assertMatch("Grade Report");
+    }
+
     /**
      * Go to the page to edit the school.
      */

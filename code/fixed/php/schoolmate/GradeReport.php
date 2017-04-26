@@ -20,7 +20,9 @@ print("
 
   while($semester = mysql_fetch_row($query))
   {
-   print("<option value='$semester[0]' ".( $_POST['semester']==$semester[0]&&$_POST['semester']!=NULL ? "SELECTED" : "").">$semester[1]</option>");
+      // sanitize!
+      $semester1 = htmlspecialchars($semester[1]);
+      print("<option value='$semester[0]' ".( $_POST['semester']==$semester[0]&&$_POST['semester']!=NULL ? "SELECTED" : "").">$semester1</option>");
   }
 
   print("

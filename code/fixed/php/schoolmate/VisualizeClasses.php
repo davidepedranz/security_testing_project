@@ -3,7 +3,8 @@
 $query = mysql_query("SELECT title FROM semesters WHERE semesterid = $_POST[semester]");
 
 // sanitize
-$title = htmlspecialchars(mysql_fetch_row($query));
+$title = mysql_fetch_row($query);
+$title0 = htmlspecialchars($title[0]);
 
 print("
  <h1>School Class Schedule</h1>
@@ -14,7 +15,7 @@ print("
   <table width='600' border='0' align='center'>
   <tr>
    <td>
-   <b>Semester:</b> $title[0]
+   <b>Semester:</b> $title0
    </td>
   </tr>
   </table>
