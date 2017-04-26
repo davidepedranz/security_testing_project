@@ -119,9 +119,8 @@ public final class Helper {
         tester.beginAt("index.php");
     }
 
-
     /**
-     * Go to the GradeReport page.
+     * Go to the Grade Report page.
      */
     public void goToGradeReport() {
 
@@ -134,6 +133,22 @@ public final class Helper {
         tester.setWorkingForm("students");
         tester.selectOption("report", "Grade Report");
         tester.assertMatch("Grade Report");
+    }
+
+    /**
+     * Go to the Points Report page.
+     */
+    public void goToPointsReport() {
+
+        // this page is for the administrator
+        loginAsAdmin();
+
+        // move to the page
+        tester.clickLinkWithText("Students");
+        tester.assertMatch("Manage Students");
+        tester.setWorkingForm("students");
+        tester.selectOption("report", "Points Report");
+        tester.assertMatch("Points Report");
     }
 
     /**
