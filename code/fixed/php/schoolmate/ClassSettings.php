@@ -9,6 +9,10 @@
  $query = mysql_query("SELECT aperc, bperc, cperc, dperc, coursename FROM courses WHERE courseid = $_POST[selectclass]") or die("ClassInfo.php: Unable to get the class information - ".mysql_error());
  $info = mysql_fetch_row($query);
 
+ // sanitize!
+ // NB: this field is actually never used!
+ $info5 = htmlspecialchars($info[5]);
+
    print(" <h1>Class Settings</h1>
  <br><br>
  <form name='classes' action='./index.php' method='POST'>
@@ -17,7 +21,7 @@
  <td>
   <table cellspacing='0' width='500' cellpadding='5' class='dynamiclist' align='center'>
    <tr class='header'>
-	<th colspan='5' align='center'><h2>$info[5]</h2></th>
+	<th colspan='5' align='center'><h2>$info5</h2></th>
    </tr>
    <tr class='header' align='center'>
 	<th>A Percent</th>

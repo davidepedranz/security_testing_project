@@ -10,6 +10,7 @@
  $info = mysql_fetch_row($query);
 
  // sanitize!
+ // NB: this field is actually never used!
  $info5 = htmlspecialchars($info[5]);
 
    print(" <h1>Class Settings</h1>
