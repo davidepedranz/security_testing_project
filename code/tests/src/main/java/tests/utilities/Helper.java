@@ -113,6 +113,49 @@ public final class Helper {
     }
 
     /**
+     * Go to the login page.
+     */
+    public void goToLoginPage() {
+        tester.beginAt("index.php");
+    }
+
+    /**
+     * Go to the page to edit the school.
+     */
+    public void goToEditSchool() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the school
+        tester.clickLinkWithText("School");
+        tester.assertMatch("Manage School Information");
+    }
+
+    /**
+     * Edit the school.
+     *
+     * @param sitetext Field "sitetext"
+     */
+    public void editSchool(String sitetext) {
+
+        // go to the right page
+        goToEditSchool();
+
+        // edit the parents (vulnerable form)
+        tester.setWorkingForm("info");
+        tester.setTextField("sitetext", sitetext);
+        tester.clickButtonWithText(" Update ");
+    }
+
+    /**
+     * Restore the initial status of the school.
+     */
+    public void cleanupSchool() {
+        editSchool("");
+    }
+
+    /**
      * Go to the page to edit the default semester.
      */
     public void goToEditSemester() {
