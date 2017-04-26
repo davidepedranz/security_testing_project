@@ -322,6 +322,20 @@ public final class Helper {
     }
 
     /**
+     * Go to the page to add a new teacher.
+     */
+    public void goToAddTeacher() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Teachers");
+        tester.assertMatch("Manage Teachers");
+        tester.clickButtonWithText("Add");
+    }
+
+    /**
      * Go to the page to edit the default teacher.
      */
     public void goToEditTeacher() {
@@ -363,9 +377,16 @@ public final class Helper {
     }
 
     /**
-     * Go to the page to edit the default user #2.
+     * Go to the page to edit user #2.
      */
     public void goToEditUser() {
+        goToEditUser(2);
+    }
+
+    /**
+     * Go to the page to edit one user.
+     */
+    public void goToEditUser(int id) {
 
         // this is a stored XSS vulnerability... login as admin
         loginAsAdmin();
@@ -374,7 +395,7 @@ public final class Helper {
         tester.clickLinkWithText("Users");
         tester.assertMatch("Manage Users");
         tester.setWorkingForm("users");
-        tester.checkCheckbox("delete[]", "2");      // there are many default users
+        tester.checkCheckbox("delete[]", String.valueOf(id));      // there are many default users
         tester.clickButtonWithText("Edit");
     }
 
@@ -382,11 +403,23 @@ public final class Helper {
      * Modify the default test user #2.
      *
      * @param username New username.
+     * @param password New password.
      */
     public void editTestUser(String username, String password) {
+        editTestUser(2, username, password);
+    }
+
+    /**
+     * Modify one user.
+     *
+     * @param id       User id.
+     * @param username New username.
+     * @param password New password.
+     */
+    public void editTestUser(int id, String username, String password) {
 
         // go to the right page
-        goToEditUser();
+        goToEditUser(id);
 
         // edit (vulnerable form)
         tester.setWorkingForm("edituser");

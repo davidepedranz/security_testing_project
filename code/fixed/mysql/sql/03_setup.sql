@@ -43,3 +43,6 @@ VALUES (1, 1, 1, 1, 'assignment', 23, '2016-08-02', '2016-08-03', 'info');
 -- announcements
 INSERT INTO `schoolbulletins` (`sbulletinid`, `title`, `message`, `bulletindate`)
 VALUES (1, 'announcement', 'message', '2016-08-02');
+
+-- user with no teacher for it
+INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (6, 'nope', md5('nope'), 'Teacher');
