@@ -188,6 +188,21 @@ public final class Helper {
     }
 
     /**
+     * Go to the page to add a new semester.
+     */
+    public void goToAddSemester() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Semesters");
+        tester.assertMatch("Manage Semesters");
+        tester.clickButtonWithText("Add");
+        tester.assertMatch("Add New Semester");
+    }
+
+    /**
      * Go to the page to edit the default semester.
      */
     public void goToEditSemester() {
@@ -239,7 +254,7 @@ public final class Helper {
         tester.clickLinkWithText("Parents");
         tester.assertMatch("Manage Parents");
         tester.clickButtonWithText("Add");
-        tester.assertMatch("Add Parent");
+        tester.assertMatch("Add New Parent");
     }
 
     /**
@@ -250,13 +265,13 @@ public final class Helper {
         // this is a stored XSS vulnerability... login as admin
         loginAsAdmin();
 
-        // move to the page to edit the semester
+        // move to the page to edit
         tester.clickLinkWithText("Parents");
         tester.assertMatch("Manage Parents");
         tester.setWorkingForm("parents");
         tester.checkCheckbox("delete[]");
         tester.clickButtonWithText("Edit");
-        tester.assertMatch("Add Parent");
+        tester.assertMatch("Edit Parent");
     }
 
     /**
@@ -503,6 +518,46 @@ public final class Helper {
      */
     public void cleanupTestClass() {
         editTestClass("course", "section", "room", "ppp");
+    }
+
+    /**
+     * Go to the page to edit the default term.
+     */
+    public void goToEditTerm() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page
+        tester.clickLinkWithText("Term");
+        tester.assertMatch("Manage Term");
+        tester.setWorkingForm("terms");
+        tester.checkCheckbox("delete[]");
+        tester.clickButtonWithText("Edit");
+        tester.assertMatch("Edit Term");
+    }
+
+    /**
+     * Modify the title of the test term.
+     *
+     * @param title New title for the term.
+     */
+    public void editTestTerm(String title) {
+
+        // go to the right page
+        goToEditTerm();
+
+        // edit (vulnerable form)
+        tester.setWorkingForm("editterm");
+        tester.setTextField("title", title);   // max 15 characters!
+        tester.clickButtonWithText("Edit Term");
+    }
+
+    /**
+     * Restore the initial status of the test term.
+     */
+    public void cleanupTestTerm() {
+        editTestTerm("term");
     }
 
     /**

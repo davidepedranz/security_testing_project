@@ -22,7 +22,9 @@
 	// print out the list of terms for the drop-down box //
 	while( $terms = mysql_fetch_row($query) )
 	{
-	 print("<option value='$terms[0]'>$terms[1]</option>\n");
+	    // sanitize!
+        $terms1 = htmlspecialchars($terms[1]);
+        print("<option value='$terms[0]'>$terms1</option>\n");
 	}
 
 	print("</select>
