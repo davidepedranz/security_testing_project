@@ -7,6 +7,9 @@
 
  $semester = mysql_fetch_row($query);
 
+ // sanitize!
+ $semester0 = htmlspecialchars($semester[0]);
+
  $query = mysql_query("SELECT termid,title FROM terms");
 
  print("<h1>Edit Semester</h1>
@@ -23,7 +26,7 @@
 	<th>Half</th>
    </tr>
    <tr class='even'>
-	<td><input type='text' name='title' maxlength='15' value='$semester[0]' /></td>
+	<td><input type='text' name='title' maxlength='15' value='$semester0' /></td>
 	<td><select name='term'>");
 
 	// print out the list of terms for the drop-down box //

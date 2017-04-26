@@ -113,11 +113,9 @@ public final class Helper {
     }
 
     /**
-     * Modify the title of the test Semester.
-     *
-     * @param title New title for the semester.
+     * Go to the page to edit the default semester.
      */
-    public void editTestSemester(String title) {
+    public void goToEditSemester() {
 
         // this is a stored XSS vulnerability... login as admin
         loginAsAdmin();
@@ -128,6 +126,18 @@ public final class Helper {
         tester.setWorkingForm("semesters");
         tester.checkCheckbox("delete[]");
         tester.clickButtonWithText("Edit");
+        tester.assertMatch("Edit Semester");
+    }
+
+    /**
+     * Modify the title of the test Semester.
+     *
+     * @param title New title for the semester.
+     */
+    public void editTestSemester(String title) {
+
+        // go to the right page
+        goToEditSemester();
 
         // edit the semester (vulnerable form)
         tester.setWorkingForm("editsemester");
