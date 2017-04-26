@@ -45,4 +45,7 @@ INSERT INTO `schoolbulletins` (`sbulletinid`, `title`, `message`, `bulletindate`
 VALUES (1, 'announcement', 'message', '2016-08-02');
 
 -- user with no teacher for it
-INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (6, 'nope', md5('nope'), 'Teacher');
+INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (6, 'noteacher', md5('noteacher'), 'Teacher');
+
+-- user with no student for it
+INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (7, 'nostudent', md5('nostudent'), 'Student');

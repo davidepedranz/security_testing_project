@@ -23,7 +23,9 @@
 
 	 while($users = mysql_fetch_row($query))
 	 {
-	  print("<option value='$users[0]'>$users[1]</option>\n");
+	     // sanitize!
+         $user1 = htmlspecialchars($users[1]);
+         print("<option value='$users[0]'>$users1</option>\n");
 	 }
 print("	 </select>
 	</td>

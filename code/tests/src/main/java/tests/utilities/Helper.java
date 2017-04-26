@@ -300,6 +300,21 @@ public final class Helper {
     }
 
     /**
+     * Go to the page to add a new student.
+     */
+    public void goToAddStudent() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Students");
+        tester.assertMatch("Manage Students");
+        tester.clickButtonWithText("Add");
+        tester.assertMatch("Add New Student");
+    }
+
+    /**
      * Modify the student test user.
      *
      * @param fname First name.
