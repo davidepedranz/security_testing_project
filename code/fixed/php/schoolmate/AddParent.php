@@ -22,7 +22,10 @@
 
 	 while($students = mysql_fetch_row($query))
 	 {
-	  print("<option value='$students[0]'>$students[1] $students[2]</option>\n");
+	     // sanitize!
+         $students1 = htmlspecialchars($students[1]);
+         $students2 = htmlspecialchars($students[2]);
+	  print("<option value='$students[0]'>$students1 $students2</option>\n");
 	 }
 print("  </select>
 	</td>

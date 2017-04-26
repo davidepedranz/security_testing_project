@@ -227,14 +227,25 @@ public final class Helper {
         editTestSemester("semester");
     }
 
+    /**
+     * Go to the page to add a new parent.
+     */
+    public void goToAddParent() {
+
+        // this is a stored XSS vulnerability... login as admin
+        loginAsAdmin();
+
+        // move to the page to edit the student
+        tester.clickLinkWithText("Parents");
+        tester.assertMatch("Manage Parents");
+        tester.clickButtonWithText("Add");
+        tester.assertMatch("Add Parent");
+    }
 
     /**
-     * Modify the title of the test parent.
-     *
-     * @param firstName  New first name for the parent.
-     * @param secondName New second name for the parent.
+     * Go to the page to edit a parent.
      */
-    public void editTestParent(String firstName, String secondName) {
+    public void goToEditParent() {
 
         // this is a stored XSS vulnerability... login as admin
         loginAsAdmin();
@@ -245,6 +256,19 @@ public final class Helper {
         tester.setWorkingForm("parents");
         tester.checkCheckbox("delete[]");
         tester.clickButtonWithText("Edit");
+        tester.assertMatch("Add Parent");
+    }
+
+    /**
+     * Modify the title of the test parent.
+     *
+     * @param firstName  New first name for the parent.
+     * @param secondName New second name for the parent.
+     */
+    public void editTestParent(String firstName, String secondName) {
+
+        // go to the right page
+        goToEditParent();
 
         // edit the parents (vulnerable form)
         tester.setWorkingForm("editparent");
@@ -290,7 +314,7 @@ public final class Helper {
     /**
      * Restore the initial status of the Student test user.
      */
-    public void cleanupStudentTestUser() throws IOException {
+    public void cleanupTestStudent() throws IOException {
 
         // login as admin
         loginAsAdmin();
