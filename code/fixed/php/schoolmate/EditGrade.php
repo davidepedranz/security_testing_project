@@ -30,6 +30,7 @@
 
 
 	// sanitize!!!
+    $id0 = htmlspecialchars($id[0]);
     $assignment = htmlspecialchars($_POST[assignment]);
     $selectclass = htmlspecialchars($_POST[selectclass]);
 
@@ -53,7 +54,7 @@ print("	</td>
   <input type='hidden' name='gradeid' value='$grade[4]' />
   <input type='hidden' name='wasgrade' value='".number_format($grade[1],1)."' />
   <input type='hidden' name='wasdate' value='".( convertfromdb($grade[0]) != "//" ? convertfromdb($grade[0]) : "")."' />
-  <input type='hidden' name='student' value='$id[0]' />
+  <input type='hidden' name='student' value='$id0' />
   <input type='hidden' name='assignment' value='$assignment' />
   <input type='hidden' name='selectclass' value='$selectclass' />
   <input type='hidden' name='page2' value='$page2'>
