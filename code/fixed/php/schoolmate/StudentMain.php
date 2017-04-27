@@ -76,12 +76,15 @@ $page2 = sanitize_digit($_POST["page2"]);
 	 <br><br>");
    }
 
+    // sanitize
+    $selectclass = htmlspecialchars($_POST[selectclass]);
+
 print("   <a class='menu' href='javascript: logoutstudent();' onMouseover=\"window.status='Log Out';return true;\" onMouseout=\"window.status='';return true;\">Log Out</a>
 
    <input type='hidden' name='page2' value='$page2'>
    <input type='hidden' name='logout'>
    <input type='hidden' name='page' value='$page'>
-   <input type='hidden' name='selectclass' value='$_POST[selectclass]' />
+   <input type='hidden' name='selectclass' value='$selectclass' />
  </form>
   </td>
   <td class='b' width='10' background='./images/left.gif'><div style='letter-spacing: 1pt;'>&nbsp;</div></td>
