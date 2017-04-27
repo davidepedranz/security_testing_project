@@ -28,6 +28,11 @@
 
 	print("$student[0] $student[1]");
 
+
+	// sanitize!!!
+    $assignment = htmlspecialchars($_POST[assignment]);
+    $selectclass = htmlspecialchars($_POST[selectclass]);
+
 print("	</td>
 	<td><input type='text' name='gradedate' maxlength='10' size='10' value='".( convertfromdb($grade[0]) != "//" ? convertfromdb($grade[0]) : "")."' /></td>
 	<td><input type='text' name='points' maxlength='5' size='5' value='".number_format($grade[1],1)."' /></td>
@@ -49,8 +54,8 @@ print("	</td>
   <input type='hidden' name='wasgrade' value='".number_format($grade[1],1)."' />
   <input type='hidden' name='wasdate' value='".( convertfromdb($grade[0]) != "//" ? convertfromdb($grade[0]) : "")."' />
   <input type='hidden' name='student' value='$id[0]' />
-  <input type='hidden' name='assignment' value='$_POST[assignment]' />
-  <input type='hidden' name='selectclass' value='$_POST[selectclass]' />
+  <input type='hidden' name='assignment' value='$assignment' />
+  <input type='hidden' name='selectclass' value='$selectclass' />
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='date'>
   <input type='hidden' name='logout'>
