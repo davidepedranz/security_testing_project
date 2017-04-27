@@ -35,6 +35,9 @@
 	 print("<option value='$terms[0]'>$terms[1]</option>\n");
 	}
 
+	// sanitize
+    $id0 = htmlspecialchars($id[0]);
+
 	print("</select>
 	</td>
 	<td><input type='text' maxlength='10' name='startdate' size='8' value='".convertfromdb($semester[1])."' /></td>
@@ -61,7 +64,7 @@
    </table>
 
   <input type='hidden' name='editsemester'>
-  <input type='hidden' name='semesterid' value='$id[0]'>
+  <input type='hidden' name='semesterid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>
