@@ -34,6 +34,10 @@
  $sitemessage = $temp[1];
  // End GET queries
 
+// sanitize!
+$address0 = htmlspecialchars($address[0]);
+$phone0 = htmlspecialchars($phone[0]);
+
  print("<table width='100%' border=0 cellpadding=10 cellspacing=0>
 <tr>
 <td>
@@ -57,7 +61,7 @@
    Address:
   </td>
   <td align='left'>
-   <input type='text' value='$address' name='schooladdress' maxlength='50' size=40>
+   <input type='text' value='$address0' name='schooladdress' maxlength='50' size=40>
   </td>
  </tr>
  <tr class='even'>
@@ -65,7 +69,7 @@
    Phone #:
   </td>
   <td align='left'>
-   <input type='text' value='$phone' name='schoolphone' maxlength='14'>
+   <input type='text' value='$phone0' name='schoolphone' maxlength='14'>
   </td>
  </tr>
  <tr class='even'>

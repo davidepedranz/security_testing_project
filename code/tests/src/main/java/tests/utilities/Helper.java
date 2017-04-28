@@ -14,6 +14,8 @@ import javax.servlet.http.Cookie;
 import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Helper class to perform common operations in the testing of SchoolMate,
@@ -37,6 +39,14 @@ public final class Helper {
         this.environment = environment;
         this.tester = tester;
         this.client = new OkHttpClient();
+    }
+
+    public void assertRawText(String s) {
+        assertTrue(tester.getPageSource().contains(s));
+    }
+
+    public void assertNoRawText(String s) {
+        assertFalse(tester.getPageSource().contains(s));
     }
 
     /**
@@ -166,10 +176,12 @@ public final class Helper {
 
     /**
      * Edit the school.
-     *
-     * @param sitetext Field "sitetext"
      */
-    public void editSchool(String sitetext) {
+    public void editSchool(String sitetext, String address, String phone) {
+
+        // verify the inputs
+        assert address.length() <= 50 : "Max length for address is 50";
+        assert phone.length() <= 14 : "Max length for phone is 14";
 
         // go to the right page
         goToEditSchool();
@@ -177,14 +189,50 @@ public final class Helper {
         // edit the parents (vulnerable form)
         tester.setWorkingForm("info");
         tester.setTextField("sitetext", sitetext);
+        tester.setTextField("schooladdress", address);
+        tester.setTextField("schoolphone", phone);
         tester.clickButtonWithText(" Update ");
     }
 
     /**
      * Restore the initial status of the school.
      */
-    public void cleanupSchool() {
-        editSchool("");
+    public void cleanupSchool() throws IOException {
+
+        // login as admin
+        loginAsAdmin();
+
+        // extract the session
+        final String session = getSessionCookie();
+
+        // do the cleanup request
+        // NB: this is done with a direct HTTP call because the attack breaks the HTML syntax and JWebUnit gets crazy
+        final RequestBody formBody = new FormBody.Builder()
+                .add("schoolname", "School Name")
+                .add("schooladdress", "1,Street")
+                .add("schoolphone", "52365895")
+                .add("numsemesters", "0")
+                .add("numperiods", "0")
+                .add("apoint", "0")
+                .add("bpoint", "0")
+                .add("cpoint", "0")
+                .add("dpoint", "0")
+                .add("epoint", "0")
+                .add("fpoint", "0")
+                .add("sitetext", "")
+                .add("sitemessage", "")
+                .add("infoupdate", "1")
+                .add("page", "1")
+                .add("page2", "1")
+                .add("logout", "")
+                .build();
+        final Request request = new Request.Builder()
+                .url(environment.baseURL() + "index.php")
+                .header("Cookie", session)
+                .post(formBody)
+                .build();
+        final Response response = client.newCall(request).execute();
+        assertEquals(200, response.code());
     }
 
     /**

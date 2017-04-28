@@ -1,6 +1,10 @@
 -- select the right database
 USE schoolmate;
 
+-- get rid of welcome message
+UPDATE `schoolinfo`
+SET `sitemessage` = '';
+
 -- teachers
 INSERT INTO `users` (`userid`, `username`, `password`, `type`) VALUES (2, 'teacher', md5('teacher'), 'Teacher');
 INSERT INTO `teachers` (`teacherid`, `userid`, `fname`, lname) VALUES (1, 2, 'teacher', 'teacher');
