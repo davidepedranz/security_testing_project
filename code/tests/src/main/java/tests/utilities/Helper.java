@@ -64,6 +64,24 @@ public final class Helper {
     }
 
     /**
+     * Perform a login from the home page ignoring possible JavaScript alerts.
+     *
+     * @param username Username.
+     * @param password Password.
+     */
+    public void loginIgnoreAlerts(String username, String password) {
+        // NB: we disable javascript because it may be possible to get Javascript alerts
+        // after some attack... since we need to login as admin to cleanup, we ignore possible
+        // javascript alert dialogs
+        tester.setScriptingEnabled(false);
+        tester.beginAt("index.php");
+        tester.setScriptingEnabled(true);
+        tester.setTextField("username", username);
+        tester.setTextField("password", password);
+        tester.submit();
+    }
+
+    /**
      * Login as the Admin test user.
      */
     public void loginAsAdmin() {
@@ -127,6 +145,9 @@ public final class Helper {
      */
     public void goToLoginPage() {
         tester.beginAt("index.php");
+        tester.assertMatch("School Name");
+        tester.assertMatch("Username");
+        tester.assertMatch("Password");
     }
 
     /**
@@ -177,7 +198,7 @@ public final class Helper {
     /**
      * Edit the school.
      */
-    public void editSchool(String sitetext, String address, String phone) {
+    public void editSchool(String message, String text, String address, String phone) {
 
         // verify the inputs
         assert address.length() <= 50 : "Max length for address is 50";
@@ -188,7 +209,8 @@ public final class Helper {
 
         // edit the parents (vulnerable form)
         tester.setWorkingForm("info");
-        tester.setTextField("sitetext", sitetext);
+        tester.setTextField("sitemessage", message);
+        tester.setTextField("sitetext", text);
         tester.setTextField("schooladdress", address);
         tester.setTextField("schoolphone", phone);
         tester.clickButtonWithText(" Update ");
@@ -200,7 +222,7 @@ public final class Helper {
     public void cleanupSchool() throws IOException {
 
         // login as admin
-        loginAsAdmin();
+        loginIgnoreAlerts(environment.adminUsername(), environment.adminPassword());
 
         // extract the session
         final String session = getSessionCookie();

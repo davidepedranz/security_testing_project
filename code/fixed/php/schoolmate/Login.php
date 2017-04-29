@@ -12,6 +12,7 @@
  $query = mysql_query("select sitetext from schoolinfo");
 
  // sanitize!
+ $message0 = htmlspecialchars($message[0]);
  $text  = htmlspecialchars(mysql_result($query,0));
 
  print("
@@ -84,7 +85,7 @@ print(" <table width='100%' height='85%' border=0 cellspacing=0 cellpadding=0 al
 	<td width='50%' align='left' valign='top'>
 	 <div class='messageboxcenter'>
 	  <h2 class='message'>Today's Message</h2> <br>
-	   $message
+	   $message0
 	 </div>
 	</td>
 
