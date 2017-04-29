@@ -8,6 +8,7 @@
  $parent = mysql_fetch_row($query);
 
  // sanitize
+ $id0 = htmlspecialchars($id[0]);
  $parent1 = htmlspecialchars($parent[1]);
  $parent2 = htmlspecialchars($parent[2]);
 
@@ -91,7 +92,7 @@ print("     </select>
    </table>
 
   <input type='hidden' name='editparent'>
-  <input type='hidden' name='parentid' value='$id[0]'>
+  <input type='hidden' name='parentid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>
