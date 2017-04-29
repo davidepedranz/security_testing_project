@@ -7,6 +7,8 @@
 
  $student = mysql_fetch_row($query);
 
+ // sanitize!
+$id0 = htmlspecialchars($id[0]);
 $student1 = htmlspecialchars($student[1]);
 $student2 = htmlspecialchars($student[2]);
 $student3 = htmlspecialchars($student[3]);
@@ -69,7 +71,7 @@ print("     </select>
    </table>
 
   <input type='hidden' name='editstudent'>
-  <input type='hidden' name='studentid' value='$id[0]'>
+  <input type='hidden' name='studentid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>
