@@ -10,6 +10,7 @@ require_once("sanitize.php");
 
 // sanitize!
 $page2 = sanitize_digit($_POST["page2"]);
+$student = htmlspecialchars($_POST[student]);
 
  print("<script language='JavaScript'>
 
@@ -100,7 +101,7 @@ print("   <a class='menu' href='javascript: logoutstudent();' onMouseover=\"wind
    <input type='hidden' name='logout'>
    <input type='hidden' name='page' value='$page'>
    <input type='hidden' name='selectclass' value='$_POST[selectclass]' />
-   <input type='hidden' name='student' value='$_POST[student]' />
+   <input type='hidden' name='student' value='$student' />
  </form>
   </td>
   <td class='b' width='10' background='./images/left.gif'><div style='letter-spacing: 1pt;'>&nbsp;</div></td>

@@ -129,6 +129,28 @@ public final class Helper {
     }
 
     /**
+     * Add an hidden form filed to pass an extra POST variable to the server.
+     * This method is useful to bypass client side JavaScript validation code.
+     *
+     * @param formName Name of the form to submit.
+     * @param name     Name of the hidden form field.
+     * @param value    Value of the hidden for field.
+     */
+    public void addHiddenFormField(String formName, String name, String value) {
+
+        // get a reference to the form to submit
+        final IElement element = tester.getElementByXPath("//form[@name='" + formName + "']");
+        final DomElement form = ((HtmlUnitElementImpl) element).getHtmlElement();
+
+        // create the submit button
+        final AttributesImpl attributes = new AttributesImpl();
+        attributes.addAttribute("", "", "name", "", name);
+        attributes.addAttribute("", "", "value", "", value);
+        final HtmlElement submit = InputElementFactory.instance.createElement(form.getPage(), "input", attributes);
+        form.appendChild(submit);
+    }
+
+    /**
      * Get the current PHP session.
      *
      * @return Representation of the cookie for the session, in the form "name=value".
