@@ -6,6 +6,7 @@
  // sanitize
  $studentid1 = htmlspecialchars($studentid[1]);
  $studentid2 = htmlspecialchars($studentid[2]);
+ $student = htmlspecialchars($_POST[student]);
 
  print(" <h1>$studentid1 $studentid2's Classes</h1>
  <br><br>
@@ -70,7 +71,7 @@
    <input type='hidden' name='logout' />
    <input type='hidden' name='page' value='$page' />
    <input type='hidden' name='selectclass' />
-   <input type='hidden' name='student' value='$_POST[student]' />
+   <input type='hidden' name='student' value='$student' />
    <input type='hidden' name='studentid' value='$studentid[0]' />
  </td>
  </tr>
