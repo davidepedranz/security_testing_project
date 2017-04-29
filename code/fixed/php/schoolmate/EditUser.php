@@ -8,6 +8,7 @@
  $user = mysql_fetch_row($query);
 
  // sanitize!
+ $id0 = htmlspecialchars($id[0]);
  $user0 = htmlspecialchars($user[0]);
 
  print("<script language='JavaScript'>
@@ -85,7 +86,7 @@
    </table>
 
   <input type='hidden' name='edituser'>
-  <input type='hidden' name='userid' value='$id[0]'>
+  <input type='hidden' name='userid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>
