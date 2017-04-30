@@ -142,6 +142,10 @@ print(    " /> Thursday<br />
 	{
 	 print("CHECKED");
 	}
+
+// sanitize!
+$id0 = htmlspecialchars($id[0]);
+
 print(    " /> Friday
    <br /><br />
 	<input type='button' value='Edit Class' onClick='document.editclass.editclass.value=1;document.editclass.page2.value=0;document.editclass.submit();'>
@@ -151,7 +155,7 @@ print(    " /> Friday
    </table>
 
   <input type='hidden' name='editclass' value=''>
-  <input type='hidden' name='courseid' value='$id[0]'>
+  <input type='hidden' name='courseid' value='$id0'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>
