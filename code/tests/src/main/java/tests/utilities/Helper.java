@@ -317,6 +317,7 @@ public final class Helper {
      * @param title New title for the semester.
      */
     public void editTestSemester(String title) {
+        assert title.length() <= 15;
 
         // go to the right page
         goToEditSemester();

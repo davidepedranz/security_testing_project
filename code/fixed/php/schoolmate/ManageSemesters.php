@@ -135,11 +135,15 @@
 
 	if($row > ($_POST["onpage"]*25)-25 && $row <= ($_POST["onpage"]*25))
 	{
+	    // sanitize!
+        $smstr2 = htmlspecialchars($smstr[2]);
+        $term0 = htmlspecialchars($term[0]);
+
 	 $actualrow++;
 	 print("<tr class='".( $row%2==0 ? "even" : "odd" )."'>
 	  <td><input type='checkbox' name='delete[]' value='$smstr[0]' onClick='updateboxes($actualrow);' /></td>
-	  <td>$smstr[2]</td>
-	  <td>$term</td>
+	  <td>$smstr2</td>
+	  <td>$term0</td>
 	  <td>".convertfromdb($smstr[3])."</td>
 	  <td>".convertfromdb($smstr[4])."</td>
 	  <td>".convertfromdb($smstr[5])."</td>
