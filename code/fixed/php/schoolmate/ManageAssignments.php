@@ -112,6 +112,9 @@
   }
  }
 
+// sanitize!
+$coursename0 = htmlspecialchars($coursename[0]);
+
  print("<script language='JavaScript'>
 
   // Function to make sure the assignment wants to delete the assignment(s) //
@@ -181,7 +184,7 @@
   <br><br>
   <table cellspacing='0' width='600' cellpadding='8' class='dynamiclist'>
    <tr class='header'>
-	<th colspan='6'><h2>$coursename</th>
+	<th colspan='6'><h2>$coursename0</th>
    </tr>
    <tr class='header'>
 	<td>&nbsp;</td>

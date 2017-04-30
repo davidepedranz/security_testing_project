@@ -607,6 +607,7 @@ public final class Helper {
      * @param period  New period.
      */
     public void editTestClass(String name, String section, String room, String period) {
+        assert name.length() <= 20;
 
         // go to the right page
         goToEditClass();
