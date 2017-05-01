@@ -174,6 +174,9 @@ print("</select></td>
 		 print("<option value='$teacher[0]'>$teacher[1] $teacher[2]</option>\n");
 	}
 
+// sanitize!
+$fullyear = htmlspecialchars($_POST[fullyear]);
+
 print("     </select>
 	</td>
    </tr>
@@ -199,7 +202,7 @@ print("     </select>
    </table>
 
   <input type='hidden' name='addclass' value='' />
-  <input type='hidden' name='fullyear' value='$_POST[fullyear]' />
+  <input type='hidden' name='fullyear' value='$fullyear' />
   <input type='hidden' name='page2' value='$page2' />
   <input type='hidden' name='logout' />
   <input type='hidden' name='page' value='$page' />
