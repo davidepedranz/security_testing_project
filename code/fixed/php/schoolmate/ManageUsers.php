@@ -184,11 +184,13 @@
    }
   }
 
+// sanitize!
+$onpage = htmlspecialchars($_POST[onpage]);
 
 print("\n</center>
   <input type='hidden' name='deleteuser'>
   <input type='hidden' name='selectuser'>
-  <input type='hidden' name='onpage' value='$_POST[onpage]'>
+  <input type='hidden' name='onpage' value='$onpage'>
   <input type='hidden' name='page2' value='$page2'>
   <input type='hidden' name='logout'>
   <input type='hidden' name='page' value='$page'>
