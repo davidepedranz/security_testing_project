@@ -266,6 +266,8 @@ print("
   if($row==0)
 	 print("<tr class='even'><td colspan='9'><center>There are currently no students registered for this class.</center></td></tr>");
 
+// sanitize
+$selectclass = htmlspecialchars($_POST[selectclass]);
 
 print("  </table>
   <br />
@@ -274,7 +276,7 @@ print("  </table>
 
   <input type='hidden' name='addgrade' />
   <input type='hidden' name='deletegrade' />
-  <input type='hidden' name='selectclass' value='$_POST[selectclass]' />
+  <input type='hidden' name='selectclass' value='$selectclass' />
   <input type='hidden' name='selectgrade' />
   <input type='hidden' name='page2' value='$page2' />
   <input type='hidden' name='logout' />
