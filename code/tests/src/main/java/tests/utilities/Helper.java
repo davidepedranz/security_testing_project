@@ -10,12 +10,9 @@ import okhttp3.*;
 import org.xml.sax.helpers.AttributesImpl;
 
 import javax.servlet.http.Cookie;
-
 import java.io.IOException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Helper class to perform common operations in the testing of SchoolMate,
@@ -23,6 +20,7 @@ import static org.junit.Assert.assertTrue;
  *
  * @author Davide Pedranz
  */
+@SuppressWarnings("WeakerAccess")
 public final class Helper {
 
     // dependencies
@@ -55,7 +53,6 @@ public final class Helper {
      * @param username Username.
      * @param password Password.
      */
-    @SuppressWarnings("WeakerAccess")
     public void login(String username, String password) {
         tester.beginAt("index.php");
         tester.setTextField("username", username);
@@ -155,7 +152,6 @@ public final class Helper {
      *
      * @return Representation of the cookie for the session, in the form "name=value".
      */
-    @SuppressWarnings({"WeakerAccess", "SpellCheckingInspection"})
     public String getSessionCookie() {
         final Cookie cookie = (Cookie) tester.getTestingEngine().getCookies().get(0);
         assert "PHPSESSID".equals(cookie.getName()) : "It was not possible to extract the PHP session from the current page";
@@ -412,7 +408,7 @@ public final class Helper {
      *
      * @param fname First name.
      * @param mi    Initial.
-     * @param fname Second name.
+     * @param lname Second name.
      */
     public void editTestStudent(String fname, String mi, String lname) {
 
@@ -502,7 +498,7 @@ public final class Helper {
      * Modify the teacher test user.
      *
      * @param fname First name.
-     * @param fname Second name.
+     * @param lname Second name.
      */
     public void editTestTeacher(String fname, String lname) {
 
@@ -667,30 +663,5 @@ public final class Helper {
      */
     public void cleanupTestTerm() {
         editTestTerm("term");
-    }
-
-    /**
-     * Modify the default test announcement.
-     *
-     * @param title   Title.
-     * @param message Message.
-     */
-    public void edtiTestAnnouncement(String title, String message) {
-
-        // this is a stored XSS vulnerability... login as admin
-        loginAsAdmin();
-
-        // move to the page to edit the student
-        tester.clickLinkWithText("Announcements");
-        tester.assertMatch("Manage Announcements");
-        tester.setWorkingForm("announcements");
-        tester.checkCheckbox("delete[]");
-        tester.clickButtonWithText("Edit");
-
-        // edit the parents (vulnerable form)
-        tester.setWorkingForm("editannouncement");
-        tester.setTextField("title", title);
-        tester.setTextField("message", message);
-        tester.clickButtonWithText("Edit Announcement");
     }
 }
