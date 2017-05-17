@@ -2,9 +2,6 @@
 # MySQL Databases For SchoolMate #
 ##################################
 
-# fix for mysql 5.7
-SET sql_mode = '';
-
 DROP DATABASE IF EXISTS schoolmate;
 
 CREATE DATABASE schoolmate;
