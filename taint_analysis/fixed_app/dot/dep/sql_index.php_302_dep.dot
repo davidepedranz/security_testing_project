@@ -1,0 +1,23 @@
+digraph cfg {
+  label="sql_index.php_302_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 235\nVar: _t1_3\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 235\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 235\nVar: _t1_3\nFunc: _main\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 235\nLit: SELECT q1points, q2points, totalpoints, aperc, bperc, cperc, dperc FROM courses WHERE courseid = \n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 235\nVar: $class[9]\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 206\nVar: _t0_3\nFunc: _main\n"];
+  n7 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 206\nbuiltin function:\nmysql_fetch_row\n"];
+  n8 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 206\nVar: $sql\nFunc: _main\n"];
+  n9 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 205\nVar: _t0_3\nFunc: _main\n"];
+  n10 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 205\nbuiltin function:\nmysql_query\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+  n2 -> n5[label="Param #2"];
+  n6 -> n7;
+  n9 -> n10;
+  n8 -> n9;
+  n7 -> n8[label="Param #1"];
+  n5 -> n6;
+}

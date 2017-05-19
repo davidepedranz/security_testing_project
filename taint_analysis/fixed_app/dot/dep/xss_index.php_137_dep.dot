@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_137_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 63\nLit: <font color='red'>*That class interferes with another registration for this student</font>\n"];
+}

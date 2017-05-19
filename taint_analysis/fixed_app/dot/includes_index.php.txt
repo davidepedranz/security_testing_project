@@ -1,0 +1,154 @@
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddTerm.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Connect.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DBFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditAssignment.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageUsers.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAnnouncements.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageStudents.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentViewCourses.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/TeacherMain.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddAssignment.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAnnouncements.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewCourses.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditAssignment.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewStudents.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ClassSettings.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/sanitize.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditGrade.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAssignments.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DBFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewStudents.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/VisualizeRegistration.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/header.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/footer.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewCourses.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditParent.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DBFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DBFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ClassSettings.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/sanitize.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/GradeReport.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddParent.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AdminMain.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddTeacher.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddTerm.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditAnnouncements.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageUsers.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAnnouncements.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageStudents.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddStudent.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSchoolInfo.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditStudent.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddUser.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditUser.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/VisualizeRegistration.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditParent.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditSemester.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddSemester.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/sanitize.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/VisualizeClasses.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTeachers.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/GradeReport.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddClass.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTerm.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAttendance.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeficiencyReport.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddParent.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddAnnouncements.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditClass.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/PointsReport.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddAttendance.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageParents.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddTeacher.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/StudentMain.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAnnouncements.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewClassSettings.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAssignments.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/StudentViewCourses.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/sanitize.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewClassSettings.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditAnnouncements.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentViewStudents.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddStudent.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSchoolInfo.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditStudent.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddUser.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/index.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AdminMain.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/header.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/footer.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/StudentMain.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/TeacherMain.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Connect.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Login.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ValidateLogin.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/sanitize.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentMain.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/StudentViewCourses.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentMain.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAnnouncements.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewClassSettings.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAssignments.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/sanitize.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentViewStudents.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentViewCourses.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditGrade.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DBFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditUser.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAnnouncements.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ValidateLogin.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditSemester.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddSemester.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/VisualizeClasses.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTeachers.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddClass.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTerm.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddAssignment.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAttendance.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DBFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeficiencyReport.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DBFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Login.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddAnnouncements.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditClass.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/PointsReport.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddAttendance.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageParents.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php
+- /Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php

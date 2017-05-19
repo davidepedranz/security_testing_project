@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_257_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageStudents.php : 162\nLit:  </table>  <br>  <b>Reports:</b>  <select name='report' onChange='document.students.page2.value=document.students.report.value;document.students.deletestudent.value=0;document.students.submit();'>   <option>Choose a Report...</option>   <option value='27'>Deficiency Report</option>   <option value='28'>Grade Report</option>   <option value='32'>Points Report</option>   <option value='1337'>Report Cards</option>  </select> &nbsp;&nbsp;&nbsp;&nbsp;<b>Term: </b> <select name='term' onChange='document.students.submit();'>\n"];
+}

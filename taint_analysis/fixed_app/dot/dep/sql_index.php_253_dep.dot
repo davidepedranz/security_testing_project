@@ -1,0 +1,5 @@
+digraph cfg {
+  label="sql_index.php_253_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageParents.php : 157\nLit: SELECT p.parentid,p.fname,p.lname,u.username FROM parents p, users u WHERE p.userid = u.userid\n"];
+}

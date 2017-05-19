@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_314_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AdminMain.php : 269\nLit: AdminMain.php: Invalid Page\n"];
+}

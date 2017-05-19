@@ -1,0 +1,21 @@
+digraph cfg {
+  label="sql_index.php_131_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nVar: _t3_36\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nbuiltin function:\n.\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nVar: $_POST[total]\nFunc: _superglobals\n",style=filled];
+  n8 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nVar: $_POST[total]\nFunc: _superglobals\n",style=filled];
+  n9 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 39\nVar: $_POST[selectclass]\nFunc: _superglobals\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n2 -> n9;
+  n3 -> n4;
+  n4 -> n5;
+  n4 -> n8;
+  n5 -> n6;
+  n6 -> n7;
+}

@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_161_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/TeacherMain.php : 74\nLit: 	 <a class='menu' href='javascript: settings();' onMouseover=\"window.status='Manage Class Settings'; return true;\" onMouseout=\"window.status=''; return true;\">Settings</a>	 <br><br>	 <a class='menu' href='javascript: assignments();' onMouseover=\"window.status='Manage Assignments'; return true;\" onMouseout=\"window.status=''; return true;\">Assignments</a>	 <br><br>	 <a class='menu' href='javascript: grades();' onMouseover=\"window.status='Manage Grades'; return true;\" onMouseout=\"window.status=''; return true;\">Grades</a>	 <br><br>	 <a class='menu' href='javascript: students();' onMouseover=\"window.status='View Student Information'; return true;\" onMouseout=\"window.status=''; return true;\">Students</a>	 <br><br>	 <a class='menu' href='javascript: announcements();' onMouseover=\"window.status='View Announcements'; return true;\" onMouseout=\"window.status=''; return true;\">Announcements</a>	 <br><br>\n"];
+}

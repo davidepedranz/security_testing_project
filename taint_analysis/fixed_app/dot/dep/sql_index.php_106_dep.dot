@@ -1,0 +1,33 @@
+digraph cfg {
+  label="sql_index.php_106_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 31\nVar: _t2_80\nFunc: deleteparent\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 31\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 31\nVar: _t2_80\nFunc: deleteparent\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 31\nLit: DELETE FROM parent_student_match WHERE parentid = \n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 31\nVar: $parentid\nFunc: deleteparent\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageParents.php : 62\nVar: $delete[_main.$i]\nFunc: _main\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageParents.php : 59\nVar: $_POST[delete]\nFunc: _superglobals\n"];
+  n8 [shape=box, label="<uninit>",style=filled];
+  n9 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 128\nVar: $parentid\nFunc: deleteuser\n"];
+  n10 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 126\nVar: _t0_80\nFunc: deleteuser\n"];
+  n11 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 126\nbuiltin function:\nmysql_result\n"];
+  n12 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 126\nVar: $query\nFunc: deleteuser\n"];
+  n13 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 123\nVar: _t1_80\nFunc: deleteuser\n"];
+  n14 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 123\nbuiltin function:\nmysql_query\n"];
+  n15 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 126\nLit: 0\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+  n2 -> n5[label="Param #2"];
+  n7 -> n8;
+  n6 -> n7;
+  n5 -> n6;
+  n5 -> n9;
+  n10 -> n11;
+  n13 -> n14;
+  n12 -> n13;
+  n11 -> n12[label="Param #1"];
+  n11 -> n15[label="Param #2"];
+  n9 -> n10;
+}

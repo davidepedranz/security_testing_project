@@ -1,0 +1,17 @@
+digraph cfg {
+  label="sql_index.php_16_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php : 5\nVar: _t2_56\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php : 5\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php : 5\nVar: _t2_56\nFunc: _main\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php : 5\nLit: SELECT userid, fname, lname FROM teachers WHERE teacherid = \n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php : 5\nVar: $id[0]\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTeacher.php : 2\nVar: $_POST[delete][0]\nFunc: _superglobals\n"];
+  n7 [shape=box, label="<uninit>",style=filled];
+  n1 -> n2;
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+  n2 -> n5[label="Param #2"];
+  n6 -> n7;
+  n5 -> n6;
+}

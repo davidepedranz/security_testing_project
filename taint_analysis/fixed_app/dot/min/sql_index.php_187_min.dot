@@ -1,0 +1,13 @@
+digraph cfg {
+  label="sql_index.php_187_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 68\nVar: _t1_80\nFunc: deletestudent\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 68\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 68\nVar: $studentid\nFunc: deletestudent\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageStudents.php : 48\nVar: $delete[_main.$i]\nFunc: _main\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageStudents.php : 45\nVar: $_POST[delete]\nFunc: _superglobals\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+}

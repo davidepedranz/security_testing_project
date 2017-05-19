@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_68_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/PointsReport.php : 29\nLit: 	 </select> &nbsp;&nbsp;<b>Classes:</b> <select name='selectclass' onChange='document.classes.submit();'>\n"];
+}

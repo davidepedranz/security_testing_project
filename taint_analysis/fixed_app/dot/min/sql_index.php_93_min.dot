@@ -1,0 +1,13 @@
+digraph cfg {
+  label="sql_index.php_93_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ValidateLogin.php : 26\nVar: _t2_5\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ValidateLogin.php : 26\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ValidateLogin.php : 26\nbuiltin function:\n.\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ValidateLogin.php : 26\nVar: $_SESSION[username]\nFunc: _superglobals\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ValidateLogin.php : 16\nVar: $_POST[username]\nFunc: _superglobals\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+}

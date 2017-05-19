@@ -1,0 +1,33 @@
+digraph cfg {
+  label="sql_index.php_288_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nVar: _t1_35\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nVar: _t1_35\nFunc: _main\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nVar: _t1_35\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nLit: SELECT title,totalpoints FROM assignments WHERE assignmentid = '\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nVar: $_POST[assignment]\nFunc: _superglobals\n"];
+  n8 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 181\nVar: $assignment[0]\nFunc: _main\n"];
+  n9 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 175\nVar: _t0_35\nFunc: _main\n"];
+  n10 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 175\nbuiltin function:\nmysql_fetch_row\n"];
+  n11 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 175\nVar: $query\nFunc: _main\n"];
+  n12 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 170\nVar: _t1_35\nFunc: _main\n"];
+  n13 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 170\nbuiltin function:\nmysql_query\n"];
+  n14 [shape=box, label="<uninit>",style=filled];
+  n15 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 213\nLit: '\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n4 -> n7[label="Param #2"];
+  n9 -> n10;
+  n12 -> n13;
+  n11 -> n12;
+  n10 -> n11[label="Param #1"];
+  n8 -> n9;
+  n7 -> n8;
+  n7 -> n14;
+  n2 -> n3[label="Param #1"];
+  n2 -> n15[label="Param #2"];
+}

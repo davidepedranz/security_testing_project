@@ -1,0 +1,5 @@
+digraph cfg {
+  label="sql_index.php_242_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTeachers.php : 141\nLit: SELECT t.teacherid,t.fname,t.lname,u.username FROM teachers t, users u WHERE t.userid = u.userid\n"];
+}

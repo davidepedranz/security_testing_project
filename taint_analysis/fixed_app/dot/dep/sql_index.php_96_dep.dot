@@ -1,0 +1,21 @@
+digraph cfg {
+  label="sql_index.php_96_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nVar: _t1_3\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nVar: _t1_3\nFunc: _main\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nVar: _t1_3\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nLit: SELECT semesterid FROM semesters WHERE termid = \n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nVar: $_POST[term]\nFunc: _superglobals\n"];
+  n8 [shape=box, label="<uninit>",style=filled];
+  n9 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 27\nLit:  ORDER BY startdate ASC\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n4 -> n7[label="Param #2"];
+  n7 -> n8;
+  n2 -> n3[label="Param #1"];
+  n2 -> n9[label="Param #2"];
+}

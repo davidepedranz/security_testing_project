@@ -1,0 +1,29 @@
+digraph cfg {
+  label="sql_index.php_306_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nVar: _t2_73\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nVar: _t2_73\nFunc: _main\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nVar: _t2_73\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nLit: SELECT t.fname, t.lname FROM teachers t where t.teacherid = '\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nVar: $class[8]\nFunc: _main\n"];
+  n8 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 238\nVar: _t0_73\nFunc: _main\n"];
+  n9 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 238\nbuiltin function:\nmysql_fetch_row\n"];
+  n10 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 238\nVar: $query\nFunc: _main\n"];
+  n11 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 235\nVar: _t1_73\nFunc: _main\n"];
+  n12 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 235\nbuiltin function:\nmysql_query\n"];
+  n13 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php : 254\nLit: ' LIMIT 1\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n4 -> n7[label="Param #2"];
+  n8 -> n9;
+  n11 -> n12;
+  n10 -> n11;
+  n9 -> n10[label="Param #1"];
+  n7 -> n8;
+  n2 -> n3[label="Param #1"];
+  n2 -> n13[label="Param #2"];
+}

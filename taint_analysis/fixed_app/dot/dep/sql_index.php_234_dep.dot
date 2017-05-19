@@ -1,0 +1,5 @@
+digraph cfg {
+  label="sql_index.php_234_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php : 127\nLit: SELECT semesterid,termid,title,startdate,midtermdate,enddate,type FROM semesters ORDER BY enddate DESC\n"];
+}

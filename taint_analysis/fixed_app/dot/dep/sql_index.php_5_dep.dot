@@ -1,0 +1,5 @@
+digraph cfg {
+  label="sql_index.php_5_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/header.php : 3\nLit: select schoolname from schoolinfo\n"];
+}

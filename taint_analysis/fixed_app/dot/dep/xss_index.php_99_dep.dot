@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_99_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Login.php : 45\nLit: <font color='red'><center>Invalid username or password!</center></font>\n"];
+}

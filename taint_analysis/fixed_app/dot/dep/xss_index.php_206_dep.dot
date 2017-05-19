@@ -1,0 +1,37 @@
+digraph cfg {
+  label="xss_index.php_206_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nVar: _t0_36\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nVar: _t0_36\nFunc: _main\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nVar: _t0_36\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nLit: <script language='JavaScript'>  // Function to make sure the assignment wants to delete the assignment(s) //  function validate()  {   if( document.assignments.selectassignment.value > 0 )   {	var confirmed = confirm(\\\"Are you sure you want to delete this assignment?\\\");	if( confirmed == true )	{	 document.assignments.submit();	}   }   else   {	alert('You must select a assignment to delete.');   }  }  // Function to make sure only one checkbox has been selected //  function checkboxes()  {   if( document.assignments.selectassignment.value == 1 )   {	document.assignments.submit();   }   else   {	if( document.assignments.selectassignment.value > 1 )	{	 alert('You can only edit one assignment at a time.');	}	else	{	 alert('You must select a assignment to edit.');	}   }  }  // Function to keep track of how many checkboxes are checked //  function updateboxes(row)  {   row = row + 2;   if(document.assignments.elements[row].checked)   {	document.assignments.selectassignment.value = Math.round(document.assignments.selectassignment.value) + 1;   }   else   {	document.assignments.selectassignment.value = Math.round(document.assignments.selectassignment.value) - 1;   }  } </script> <h1>Manage Assignments</h1> <br><br> <table align='center' width='600' cellspacing='0' cellpadding='0' border='0'> <tr> <td> <form name='assignments' action='./index.php' method='POST'>  <input type='button' value='Add' onClick='document.assignments.page2.value=4;document.assignments.submit();'>  <input type='button' value='Edit' onClick='document.assignments.page2.value=5;checkboxes();'>  <input type='button' value='Delete' onClick='document.assignments.deleteassignment.value=1;validate();'>  <br><br>  <table cellspacing='0' width='600' cellpadding='8' class='dynamiclist'>   <tr class='header'>	<th colspan='6'><h2>\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nVar: $coursename0\nFunc: _main\n"];
+  n8 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 116\nVar: _t0_36\nFunc: _main\n"];
+  n9 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 116\nbuiltin function:\nhtmlspecialchars\n"];
+  n10 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 116\nVar: $coursename[0]\nFunc: _main\n"];
+  n11 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 7\nVar: _t0_36\nFunc: _main\n"];
+  n12 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 7\nbuiltin function:\nmysql_result\n(unmodeled)\n"];
+  n13 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 7\nVar: $query\nFunc: _main\n"];
+  n14 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 6\nVar: _t1_36\nFunc: _main\n"];
+  n15 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 6\nbuiltin function:\nmysql_query\n"];
+  n16 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 7\nLit: 0\n"];
+  n17 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php : 118\nLit: </th>   </tr>   <tr class='header'>	<td>&nbsp;</td>	<th>Title</th>	<th>Assigned Task</th>	<th>Possible Points</th>	<th>Date Assigned</th>	<th>Date Due</th>   </tr>\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n4 -> n7[label="Param #2"];
+  n8 -> n9;
+  n11 -> n12;
+  n14 -> n15;
+  n13 -> n14;
+  n12 -> n13[label="Param #1"];
+  n12 -> n16[label="Param #2"];
+  n10 -> n11;
+  n9 -> n10[label="Param #1"];
+  n7 -> n8;
+  n2 -> n3[label="Param #1"];
+  n2 -> n17[label="Param #2"];
+}

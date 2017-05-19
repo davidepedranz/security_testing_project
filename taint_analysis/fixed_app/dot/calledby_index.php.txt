@@ -1,0 +1,108 @@
+deletestudent called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageStudents.php:48
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php:117
+
+sanitize_digit called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/index.php:29
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/index.php:40
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentMain.php:12
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/StudentMain.php:12
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/TeacherMain.php:12
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AdminMain.php:12
+
+deleteassignments called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php:111
+
+convertfromdb called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAnnouncements.php:45
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php:51
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php:51
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAssignments.php:58
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAssignments.php:59
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAnnouncements.php:45
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php:51
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php:51
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAssignments.php:58
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAssignments.php:59
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewAnnouncements.php:45
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditGrade.php:38
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditGrade.php:56
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditGrade.php:56
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditGrade.php:38
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditAssignment.php:29
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditAssignment.php:30
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php:220
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php:220
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php:225
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php:226
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAttendance.php:164
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAttendance.php:163
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditAnnouncements.php:26
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditSemester.php:43
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditSemester.php:44
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditSemester.php:45
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTerm.php:25
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditTerm.php:26
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php:133
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php:134
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:147
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:148
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:149
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAnnouncements.php:135
+
+deleteuser called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageUsers.php:53
+
+deletesemester called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:31
+
+deleteattendance called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAttendance.php:24
+
+deleteterm called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php:29
+
+deleteteacher called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTeachers.php:48
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php:106
+
+deleteadmin called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php:139
+
+deleteregistration called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php:79
+
+deleteparent called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageParents.php:62
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php:128
+
+deleteannouncement called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAnnouncements.php:27
+
+deletecourse called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php:92
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageClasses.php:93
+
+converttodb called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php:20
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php:11
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php:51
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php:51
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php:19
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAssignments.php:20
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAttendance.php:12
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php:15
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php:16
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php:6
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php:7
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:16
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:17
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:18
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:6
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:7
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSemesters.php:8
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageAnnouncements.php:15
+
+deletegrade called by:
+/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php:61
+

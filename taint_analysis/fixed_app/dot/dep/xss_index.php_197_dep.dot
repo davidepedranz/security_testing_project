@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_197_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewGrades.php : 99\nLit: <tr class='even'><td colspan='9'><center>There are currently no students registered for this class.</center></td></tr>\n"];
+}

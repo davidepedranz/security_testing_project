@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_258_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 163\nLit:   </select>&nbsp;&nbsp;<b>Semester: </b> <select name='semester' onChange='document.registration.addreg.value=0;document.registration.deletereg.value=0;document.registration.submit();'>\n"];
+}

@@ -1,0 +1,13 @@
+digraph cfg {
+  label="sql_index.php_273_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 196\nVar: _t1_80\nFunc: deletecourse\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 196\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 196\nLit: DELETE FROM registrations WHERE courseid = \n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/DeleteFunctions.php : 196\nVar: $couseid\nFunc: deletecourse\n"];
+  n5 [shape=box, label="<uninit>",style=filled];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+  n2 -> n4[label="Param #2"];
+  n4 -> n5;
+}

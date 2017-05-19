@@ -1,0 +1,17 @@
+digraph cfg {
+  label="sql_index.php_176_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 59\nVar: _t3_35\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 59\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 59\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 59\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 59\nVar: $delete[_main.$i]\nFunc: _main\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 56\nVar: $_POST[delete]\nFunc: _superglobals\n",style=filled];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 59\nVar: $_POST[assignment]\nFunc: _superglobals\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n2 -> n7;
+  n3 -> n4;
+  n4 -> n5;
+  n5 -> n6;
+}

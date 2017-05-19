@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_283_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageStudents.php : 189\nLit: 	 </select>  <br /><br />  <input type='button' value='Add' onClick='document.students.page2.value=20;document.students.submit();'>  <input type='button' value='Edit' onClick='document.students.page2.value=21;checkboxes();'>  <input type='button' value='Delete' onClick='document.students.deletestudent.value=1;validate();'>  <br><br>  <center>Page: \n"];
+}

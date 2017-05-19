@@ -1,0 +1,29 @@
+digraph cfg {
+  label="sql_index.php_278_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 201\nVar: _t2_47\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 201\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 201\nVar: _t2_47\nFunc: _main\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 201\nLit: SELECT courseid, coursename FROM courses WHERE semesterid = \n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 201\nVar: $_POST[semester]\nFunc: _superglobals\n"];
+  n6 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 174\nVar: $temp[0]\nFunc: _main\n"];
+  n7 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 173\nVar: _t0_47\nFunc: _main\n"];
+  n8 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 173\nbuiltin function:\nmysql_fetch_row\n"];
+  n9 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 173\nVar: $q\nFunc: _main\n"];
+  n10 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 172\nVar: _t0_47\nFunc: _main\n"];
+  n11 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 172\nbuiltin function:\nmysql_query\n"];
+  n12 [shape=box, label="<uninit>",style=filled];
+  n13 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/Registration.php : 177\nLit: \n"];
+  n1 -> n2;
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+  n2 -> n5[label="Param #2"];
+  n7 -> n8;
+  n10 -> n11;
+  n9 -> n10;
+  n8 -> n9[label="Param #1"];
+  n6 -> n7;
+  n5 -> n6;
+  n5 -> n12;
+  n5 -> n13;
+}
