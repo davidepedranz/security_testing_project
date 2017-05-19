@@ -3,7 +3,7 @@ if($_POST['fullyear']!=1)
 {
  print("<h1>Add New Class</h1>
 
-  <form name='addclass' action='./index.php' method='POST'>
+  <form name='addclass' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='800'>
    <tr class='header'>
@@ -105,7 +105,7 @@ else
 {
  print("<h1>Add New Class</h1>
 
-  <form name='addclass' action='./index.php' method='POST'>
+  <form name='addclass' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='800'>
    <tr class='header'>

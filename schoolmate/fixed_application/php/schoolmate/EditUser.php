@@ -36,7 +36,7 @@
 
  <h1>Edit User</h1>
 
-  <form name='edituser' action='./index.php' method='POST'>
+  <form name='edituser' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='550'>
    <tr class='header'>

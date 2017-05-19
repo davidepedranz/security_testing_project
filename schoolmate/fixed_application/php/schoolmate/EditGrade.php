@@ -8,7 +8,7 @@
 
  print("<h1>Edit Grade</h1>
 
-  <form name='editgrade' action='./index.php' method='POST'>
+  <form name='editgrade' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='500'>
    <tr class='header'>

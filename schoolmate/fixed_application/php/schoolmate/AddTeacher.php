@@ -2,7 +2,7 @@
 
  print("<h1>Add New Teacher</h1>
 
-  <form name='addteacher' action='./index.php' method='POST'>
+  <form name='addteacher' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='450'>
    <tr class='header'>

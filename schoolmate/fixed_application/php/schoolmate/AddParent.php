@@ -2,7 +2,7 @@
 
  print("<h1>Add New Parent</h1>
 
-  <form name='addparent' action='./index.php' method='POST'>
+  <form name='addparent' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='500'>
    <tr class='header'>

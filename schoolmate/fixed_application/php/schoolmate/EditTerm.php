@@ -12,7 +12,7 @@
 
  print("<h1>Edit Term</h1>
 
-  <form name='editterm' action='./index.php' method='POST'>
+  <form name='editterm' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='450'>
    <tr class='header'>
@@ -22,7 +22,7 @@
    </tr>
    <tr class='even'>
 	<td><input type='text' name='title' maxlength='15' value='$term[0]' /></td>
-	<td><input type='text' name='startdate' value='".convertfromdb($term[1])."' /></td>
+	<td><input type='text' name='startdate' value='" .convertfromdb($term[1])."' /></td>
 	<td><input type='text' name='enddate' value='".convertfromdb($term[2])."' /></td>
    </tr>
    </table>

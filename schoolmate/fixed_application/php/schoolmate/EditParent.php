@@ -14,7 +14,7 @@
 
  print("<h1>Edit Parent</h1>
 
-  <form name='editparent' action='./index.php' method='POST'>
+  <form name='editparent' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='550'>
    <tr class='header'>

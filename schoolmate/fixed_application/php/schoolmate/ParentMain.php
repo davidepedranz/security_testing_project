@@ -62,14 +62,8 @@ $selectclass = htmlspecialchars($_POST["selectclass"]);
 
  include("maketop.php");
 
- print("
- <tr>
-  <td class='b' width=130 valign='top'>
-   <br>
-   <form name='student' action='./index.php' method='POST'>
-
-   <a class='menu' href='javascript: students();' onMouseover=\"window.status='View Students'; return true;\" onMouseout=\"window.status=''; return true;\">Students</a>
-   <br><br>");
+ print(">Students</a>
+   <br><br>\"");
 
    if($_POST['student'] != "" && $page2 != 0)
    {
@@ -96,7 +90,7 @@ $selectclass = htmlspecialchars($_POST["selectclass"]);
 	}
    }
 
-print("   <a class='menu' href='javascript: logoutstudent();' onMouseover=\"window.status='Log Out';return true;\" onMouseout=\"window.status='';return true;\">Log Out</a>
+print(">Log Out</a>
 
    <input type='hidden' name='page2' value='$page2'>
    <input type='hidden' name='logout'>
@@ -105,7 +99,7 @@ print("   <a class='menu' href='javascript: logoutstudent();' onMouseover=\"wind
    <input type='hidden' name='student' value='$student' />
  </form>
   </td>
-  <td class='b' width='10' background='./images/left.gif'><div style='letter-spacing: 1pt;'>&nbsp;</div></td>
+  <td class='b' width='10' background=><div style='letter-spacing: 1pt;'>&nbsp;</div></td>
   <td class='w' valign='top'>
    <table border=0 cellspacing=0 cellpadding=10 width='100%' height='100%'>
 	<tr>

@@ -20,7 +20,7 @@
   <td class='b' width=130 valign='top'>
    <br>
   </td>
-  <td class='bv' width=10 background='./images/left.gif'>&nbsp;</td>
+  <td class='bv' width=10 background='images/left.gif'>&nbsp;</td>
   <td class='w' valign='top'>
    <table border=0 cellspacing=0 cellpadding=25 width='100%' height='100%'>
 	<tr>
@@ -38,7 +38,7 @@
 	 <td width='50%' align='right' valign='top'>
 		<div class='messagebox'>
 		 <br>
-		 <form action='./index.php' method='post' name='login'>");
+		 <form action='index.php' method='post' name='login'>");
 
 		 if($loginerror == 1)
 		 {
@@ -75,7 +75,7 @@ print(" <table width='100%' height='85%' border=0 cellspacing=0 cellpadding=0 al
 	 <tr>
 	  <td align='center' valign='middle'>
 		<br>
-		<img src='./images/school.jpg' style='padding-left: 30px; padding-top: 20px;' width='233' height='111' align='center' valign='middle' />
+		<img src='images/school.jpg' style='padding-left: 30px; padding-top: 20px;' width='233' height='111' align='center' valign='middle' />
 	  </td>
 	 </tr>
 	 </table>

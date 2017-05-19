@@ -12,7 +12,7 @@
 
  print("<h1>Edit Class</h1>
 
-  <form name='editclass' action='./index.php' method='POST'>
+  <form name='editclass' action='index.php' method='POST'>
   <br><br><br>
   <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='800'>
    <tr class='header'>
