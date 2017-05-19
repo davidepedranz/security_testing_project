@@ -89,18 +89,46 @@ $page2 = sanitize_digit($_POST["page2"]);
 
  include("maketop.php");
 
- print(">Log Out</a>
+print("
+ <tr>
+  <td class='b' width=130 valign='top'>
+   <br>
+   <form name='admin' action='./index.php' method='POST'>
+
+   <a class='menu' href='javascript: schoolInfo();' onMouseover=\"window.status='Manage School Information'; return true;\" onMouseout=\"window.status=''; return true;\">School</a>
+   <br><br>
+   <a class='menu' href='javascript: terms();' onMouseover=\"window.status='Manage Terms'; return true;\" onMouseout=\"window.status=''; return true;\">Terms</a>
+   <br><br>
+   <a class='menu' href='javascript: semesters();' onMouseover=\"window.status='Manage Semesters'; return true;\" onMouseout=\"window.status=''; return true;\">Semesters</a>
+   <br><br>
+   <a class='menu' href='javascript: classes();' onMouseover=\"window.status='Manage Classes'; return true;\" onMouseout=\"window.status=''; return true;\">Classes</a>
+   <br><br>
+   <a class='menu' href='javascript: users();' onMouseover=\"window.status='Manage Users'; return true;\" onMouseout=\"window.status=''; return true;\">Users</a>
+   <br><br>
+   <a class='menu' href='javascript: teachers();' onMouseover=\"window.status='Manage Teachers'; return true;\" onMouseout=\"window.status=''; return true;\">Teachers</a>
+   <br><br>
+   <a class='menu' href='javascript: students();' onMouseover=\"window.status='Manage Students'; return true;\" onMouseout=\"window.status=''; return true;\">Students</a>
+   <br><br>
+   <a class='menu' href='javascript: register();' onMouseover=\"window.status='Register Students for Classes'; return true;\" onMouseout=\"window.status=''; return true;\">Registration</a>
+   <br><br>
+   <a class='menu' href='javascript: attendance();' onMouseover=\"window.status='Keep Attendance'; return true;\" onMouseout=\"window.status=''; return true;\">Attendance</a>
+   <br><br>
+   <a class='menu' href='javascript: parents();' onMouseover=\"window.status='Manage Parents'; return true;\" onMouseout=\"window.status=''; return true;\">Parents</a>
+   <br><br>
+   <a class='menu' href='javascript: announcements();' onMouseover=\"window.status='Manage Announcements'; return true;\" onMouseout=\"window.status=''; return true;\">Announcements</a>
+   <br><br>
+   <a class='menu' href='javascript: logoutAdmin();' onMouseover=\"window.status='Log Out';return true;\" onMouseout=\"window.status='';return true;\">Log Out</a>
 
    <input type='hidden' name='page2' value='$page2'>
    <input type='hidden' name='logout'>
    <input type='hidden' name='page' value='$page'>
  </form>
   </td>
-  <td class='b' width=10 background='images/left.gif'><div style='letter-spacing: 1pt;'>&nbsp;</div></td>
+  <td class='b' width=10 background='./images/left.gif'><div style='letter-spacing: 1pt;'>&nbsp;</div></td>
   <td class='w' valign='top'>
    <table border=0 cellspacing=0 cellpadding=10 width='100%' height='100%'>
 	<tr>
-	 <td valign='top'>\"");
+	 <td valign='top'>");
 
 	 switch($page2)
 	 {
