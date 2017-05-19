@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_222_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageTerms.php : 108\nLit: SELECT COUNT(*) FROM terms\n"];
-}

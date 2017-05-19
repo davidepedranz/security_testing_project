@@ -15,11 +15,6 @@
 function sanitize_digit($raw)
 {
     return intval($raw);
-//    if (preg_match('/^[0-9]+$/', $raw)) {
-//        return intval($raw);
-//    } else {
-//        return 0;
-//    }
 }
 
 ?>

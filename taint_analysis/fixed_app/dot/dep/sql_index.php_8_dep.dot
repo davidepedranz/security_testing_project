@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_8_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddSemester.php : 3\nLit: SELECT termid,title FROM terms\n"];
-}

@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_43_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSchoolInfo.php : 9\nLit: SELECT phonenumber FROM schoolinfo\n"];
-}

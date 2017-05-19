@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_183_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageGrades.php : 64\nLit: SELECT midtermdate FROM semesters WHERE startdate < CURDATE() AND CURDATE() < enddate\n"];
-}

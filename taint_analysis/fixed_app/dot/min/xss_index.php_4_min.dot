@@ -1,11 +1,11 @@
 digraph cfg {
   label="xss_index.php_4_min";
   labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php : 2\nVar: _t0_29\nFunc: _main\n"];
-  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php : 2\nbuiltin function:\n.\n"];
-  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php : 2\nbuiltin function:\n.\n"];
-  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/maketop.php : 2\nVar: $schoolname\nFunc: _main\n"];
-  n5 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/header.php : 6\nbuiltin function:\nmysql_result\n(unmodeled)\n",style=filled];
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/maketop.php : 2\nVar: _t0_28\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/maketop.php : 2\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/maketop.php : 2\nbuiltin function:\n.\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/maketop.php : 2\nVar: $schoolname\nFunc: _main\n"];
+  n5 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/header.php : 6\nbuiltin function:\nmysql_result\n(unmodeled)\n",style=filled];
   n1 -> n2;
   n2 -> n3;
   n3 -> n4;

@@ -1,7 +1,7 @@
 digraph cfg {
   label="xss_index.php_321_min";
   labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 539\nVar: $data\nFunc: _main\n"];
-  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 531\nbuiltin function:\npdf_get_buffer\n(unmodeled)\n",style=filled];
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 539\nVar: $data\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 531\nbuiltin function:\npdf_get_buffer\n(unmodeled)\n",style=filled];
   n1 -> n2;
 }

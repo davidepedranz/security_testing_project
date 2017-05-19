@@ -1,5 +1,5 @@
 digraph cfg {
   label="xss_index.php_235_dep";
   labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ParentMain.php : 145\nLit:       </td>	</tr>   </table>  </td>\n"];
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ParentMain.php : 144\nLit:       </td>	</tr>   </table>  </td>\n"];
 }

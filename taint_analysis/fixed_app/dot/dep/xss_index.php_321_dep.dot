@@ -1,12 +1,12 @@
 digraph cfg {
   label="xss_index.php_321_dep";
   labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 539\nVar: $data\nFunc: _main\n"];
-  n2 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 531\nVar: _t0_3\nFunc: _main\n"];
-  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 531\nbuiltin function:\npdf_get_buffer\n(unmodeled)\n"];
-  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 531\nVar: $pdf\nFunc: _main\n"];
-  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 37\nVar: _t0_3\nFunc: _main\n"];
-  n6 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ReportCards.php : 37\nbuiltin function:\npdf_new\n(unmodeled)\n"];
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 539\nVar: $data\nFunc: _main\n"];
+  n2 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 531\nVar: _t0_3\nFunc: _main\n"];
+  n3 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 531\nbuiltin function:\npdf_get_buffer\n(unmodeled)\n"];
+  n4 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 531\nVar: $pdf\nFunc: _main\n"];
+  n5 [shape=box, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 37\nVar: _t0_3\nFunc: _main\n"];
+  n6 [shape=ellipse, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ReportCards.php : 37\nbuiltin function:\npdf_new\n(unmodeled)\n"];
   n2 -> n3;
   n5 -> n6;
   n4 -> n5;

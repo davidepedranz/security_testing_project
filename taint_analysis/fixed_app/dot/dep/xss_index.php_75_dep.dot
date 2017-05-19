@@ -1,5 +1,5 @@
 digraph cfg {
   label="xss_index.php_75_dep";
   labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ViewCourses.php : 32\nLit: 	 </select>	 <br><br>  </td> </tr> <tr> <td>  <table cellspacing='0' width='300' cellpadding='5' class='dynamiclist' align='center'>   <tr class='header'>	<th>Class Name</th>   </tr>   \n"];
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/ViewCourses.php : 32\nLit: 	 </select>	 <br><br>  </td> </tr> <tr> <td>  <table cellspacing='0' width='300' cellpadding='5' class='dynamiclist' align='center'>   <tr class='header'>	<th>Class Name</th>   </tr>   \n"];
 }

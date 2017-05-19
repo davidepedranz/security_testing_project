@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_246_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageUsers.php : 145\nLit: SELECT userid,username,type FROM users\n"];
-}

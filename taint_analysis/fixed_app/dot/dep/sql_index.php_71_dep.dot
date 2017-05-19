@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_71_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/AddTeacher.php : 19\nLit: SELECT u.userid,u.username FROM users u LEFT JOIN teachers t ON u.userid = t.userid WHERE t.userid IS NULL AND (u.type='Teacher' OR u.type='Substitute')\n"];
-}

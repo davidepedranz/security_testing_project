@@ -1,5 +1,5 @@
 digraph cfg {
   label="xss_index.php_219_dep";
   labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/EditClass.php : 133\nLit:  /> Wednesday<br />   <input type='checkbox' value='H' name='Days[]'\n"];
+  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/schoolmate/fixed_application/php/schoolmate/EditClass.php : 133\nLit:  /> Wednesday<br />   <input type='checkbox' value='H' name='Days[]'\n"];
 }

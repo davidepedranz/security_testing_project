@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_117_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/VisualizeRegistration.php : 34\nLit: SELECT numperiods FROM schoolinfo\n"];
-}

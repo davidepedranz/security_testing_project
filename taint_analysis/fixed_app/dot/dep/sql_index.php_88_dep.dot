@@ -1,5 +1,0 @@
-digraph cfg {
-  label="sql_index.php_88_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="/Users/peddy/git/unitn/security_testing_project/fixed/php/schoolmate/ManageSchoolInfo.php : 24\nLit: SELECT apoint, bpoint, cpoint, dpoint, fpoint FROM schoolinfo\n"];
-}
